@@ -17,6 +17,7 @@
 
 $poppy-red: #b50800
 $poppy-red-invert: #fff
+$grass-green: #097c47
 
 $primary: $poppy-red
 $primary-invert: $poppy-red-invert
@@ -95,12 +96,22 @@ iframe
     min-height: 1300px
 
 .region
-    background: $poppy-red
+    background-color: #6a1111
+    background-image: url(../images/poppy.svg)
+    background-size: 800px
+    background-position: 50% 0
 
+    h1
+        margin-bottom: 1em
+        span
+            padding: 4px 16px
+            background: $poppy-red    
+    .column
+        background: $poppy-red
+        margin: 2em 1em
     h2
         color: #eab962
         font-size: 2.5rem
-        margin-top: 1.5rem
         @extend .moon
     div
         color: #fff
@@ -127,9 +138,16 @@ iframe
         stroke: #000
 
 #banner
-    background-color: #097c47
+    background-color: $grass-green
     background-image: url(../images/poison.svg)
     background-size: contain
+
+    h1
+        margin-top: 0.5rem
+
+    span
+        padding: 4px 16px
+        background: #036136
 
 #actualite
     time
@@ -138,7 +156,34 @@ iframe
         color: $poppy-red
     h2
         margin-bottom: 0.5rem
+        font-size: 2.5em
+        color: #111
+        @extend .moon
 
 #nos-soutiens
     img
         max-width: 200px
+
+#actualite
+    section
+        background-color: #666
+        background-image: url(../images/news.svg)
+        background-size: 1000px
+        background-position: 50% 50px
+    h1
+        margin-bottom: 1em
+        span
+            padding: 4px 16px
+            background: #222
+
+#l-appel
+    section
+        background-color: #09120e
+        background-image: url(../images/appel.svg)
+        background-size: 100px
+        background-position: 150px 80px
+    h1
+        color: #fff
+        span
+            padding: 4px 16px
+            background: #036136

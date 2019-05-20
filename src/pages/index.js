@@ -28,8 +28,8 @@ const IndexPage = () => (
     <section className="hero" id="banner">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <div className="subtitle" style={{ color: '#fff' }}>Les <strong style={{ color: '#fff' }}>Franc-Comtois&middot;es</strong> s'organisent pour</div>
-          <h1 className="moon" style={{ color: '#f3ca83' }}>l'interdiction des pesticides de synthèse</h1>
+          <div className="subtitle" style={{ color: '#fff' }}><span>Les <strong style={{ color: '#fff' }}>Franc-Comtois&middot;es</strong> s'organisent pour</span></div>
+          <h1 className="moon" style={{ color: '#f3ca83' }}><span>l'interdiction des pesticides de synthèse</span></h1>
         </div>
       </div>
     </section>
@@ -53,8 +53,8 @@ const IndexPage = () => (
     <Section id="contacts">
       <section className="section region">
         <div className="container">
-          <h1 style={{ color: '#fff' }}>Nous rejoindre en Franche-Comté</h1>
-          <div className="columns has-text-centered">
+          <h1 style={{ color: '#fff' }}><span>Nous rejoindre en Franche-Comté</span></h1>
+          <div className="columns has-text-centered is-vcentered">
             <div className="column">
               <h2>25 - Besançon</h2>
               <div className="columns is-centered">
@@ -162,9 +162,9 @@ const IndexPage = () => (
       </section>
     </Section>
     <Section id="actualite">
-      <section className="section" style={{ background: '#666' }}>
+      <section className="section">
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '3rem' }}>Actualité</h1>
+          <h1 style={{ color: '#fff', marginBottom: '3rem' }}><span>Actualité</span></h1>
           <div className="columns is-multiline">
             <article className="column is-half">
               <div className="box">
@@ -253,9 +253,9 @@ const IndexPage = () => (
       </section>
     </Section>
     <Section id="l-appel">
-      <section className="section" style={{ background: '#097c47' }}>
+      <section className="section">
         <div className="container">
-          <h1 style={{ color: '#fff' }}>Soutenez-nous, signez l'appel national !</h1>
+          <h1><span>Soutenez-nous, signez l'appel national !</span></h1>
           <iframe src="https://nousvoulonsdescoquelicots.org/widget/" width="340" height="500" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" title="Appel des coquelicots"></iframe>
         </div>
       </section>
