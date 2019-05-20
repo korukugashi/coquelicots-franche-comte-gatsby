@@ -1,0 +1,144 @@
+@font-face
+    font-family: "Moon Flower"
+    font-weight: 400
+    font-style: normal
+    src: url(../fonts/Moon-Flower.eot)
+    src: url(../fonts/Moon-Flower.eot#iefix) format("embedded-opentype"), url(../fonts/Moon-Flower.woff2) format("woff2"), url(../fonts/Moon-Flower.woff) format("woff"), url(../fonts/Moon-Flower.ttf) format("truetype")
+
+@font-face
+    font-family: "Futura Std Medium"
+    font-weight: 400
+    font-style: normal
+    src: url(../fonts/FuturaStd-Medium.eot)
+    src: url(../fonts/FuturaStd-Medium.eot#iefix) format("embedded-opentype"), url(../fonts/FuturaStd-Medium.woff2) format("woff2"), url(../fonts/FuturaStd-Medium.woff) format("woff"), url(../fonts/FuturaStd-Medium.ttf) format("truetype")
+
+    
+@import "~bulma/sass/utilities/initial-variables"
+
+$poppy-red: #b50800
+$poppy-red-invert: #fff
+
+$primary: $poppy-red
+$primary-invert: $poppy-red-invert
+$body-color: #000
+$strong-color: #000
+$body-size: 18px
+$link: $poppy-red
+$family-sans-serif: "Futura Std Medium",Arial,Verdana,sans-serif
+$column-gap: 1.5rem
+$radius: 0
+$radius-large: 0
+$radius-small: 0
+
+
+.moon
+    font-family: "Moon Flower",Arial,Verdana,sans-serif
+
+.futura
+    font-family: $family-sans-serif
+
+@import "~bulma"
+
+html.has-navbar-fixed-top, body.has-navbar-fixed-top
+    padding-top: 80px
+
+h1
+    @extend .title
+    @extend .is-1
+    @extend .has-text-centered
+    color: $poppy-red
+
+h2
+    @extend .title
+    @extend .is-3
+    @extend .has-text-centered
+
+*[id]:before
+    content: ""
+    display: block
+    height: 80px
+    margin: -80px 0 0
+
+header
+    h1
+        font-size: 1.5rem
+        margin-left: 1rem
+    
+    .navbar
+        @extend .has-shadow
+
+    .navbar-item
+        padding-left: 0.25rem
+        padding-right: 0.25rem
+        outline: none
+        :focus
+            color: $poppy-red                                                   
+    
+        span
+            padding: 2px 10px
+    
+    .navbar-item.is-active
+        span
+            background: $poppy-red
+            color: $poppy-red-invert
+
+main 
+    h1
+        color: $strong-color
+
+p
+    margin: 1rem 0
+    @extend .has-text-justified
+
+iframe
+    width: 100%
+    min-height: 1300px
+
+.region
+    background: $poppy-red
+
+    h2
+        color: #eab962
+        font-size: 2.5rem
+        margin-top: 1.5rem
+        @extend .moon
+    div
+        color: #fff
+        text-align: center
+    a
+        color: #fff
+        text-decoration: underline
+    .newsletter
+        margin-bottom: 0.5rem
+    a.follow
+        background: #fff
+        width: 3rem
+        height: 3rem
+        color: #000
+        border-radius: 50%
+        margin: 1rem 0.5rem
+        display: flex
+        align-items: center
+        justify-content: center
+    svg
+        height: 24px
+        width: 24px
+    svg.email
+        stroke: #000
+
+#banner
+    background-color: #097c47
+    background-image: url(../images/poison.svg)
+    background-size: contain
+
+#actualite
+    time
+        text-align: center
+        display: block
+        color: $poppy-red
+    h2
+        margin-bottom: 0.5rem
+
+#nos-soutiens
+    img
+        max-width: 200px
