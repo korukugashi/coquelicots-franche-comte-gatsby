@@ -156,11 +156,11 @@ const IndexPage = () => (
     </section>
     <Section id="photos" className="is-hidden-touch">
       <section className="section columns has-text-centered" style={{ padding: 0 }}>
-        <img src={Rassemblement} alt="Rassemblement" />
-        <img src={Chant} alt="Chant" />
-        <img src={Couture} alt="Couture" />
-        <img src={Plantation} alt="Plantation" />
-        <img src={Marche} alt="Marche" />
+        <img className="lazyload" data-src={Rassemblement} alt="Rassemblement" />
+        <img className="lazyload" data-src={Chant} alt="Chant" />
+        <img className="lazyload" data-src={Couture} alt="Couture" />
+        <img className="lazyload" data-src={Plantation} alt="Plantation" />
+        <img className="lazyload" data-src={Marche} alt="Marche" />
       </section>
     </Section>
     <Section id="actualite">
@@ -258,7 +258,7 @@ const IndexPage = () => (
       <section className="section">
         <div className="container">
           <h1><span>Soutenez-nous, signez l'appel national !</span></h1>
-          <iframe src="https://nousvoulonsdescoquelicots.org/widget/" width="340" height="500" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" title="Appel des coquelicots"></iframe>
+          <iframe className="lazyload" data-src="https://nousvoulonsdescoquelicots.org/widget/" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" title="Appel des coquelicots"></iframe>
         </div>
       </section>
     </Section>
