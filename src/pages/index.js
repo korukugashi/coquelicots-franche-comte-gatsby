@@ -25,23 +25,25 @@ import Velorution from "../images/partenaires/velorution.png"
 const IndexPage = () => (
   <Layout isIndex={true}>
     <SEO title="Accueil" keywords={[`pesticides`, `coquelicots`, `Franche-Comté`, `glyphosate`]} />
-    <section className="hero" id="banner">
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          <div className="subtitle" style={{ color: '#fff' }}><span>Les <strong style={{ color: '#fff' }}>Franc-Comtois&middot;es</strong> s'organisent pour</span></div>
-          <h1 className="moon" style={{ color: '#f3ca83' }}><span>l'interdiction des pesticides de synthèse</span></h1>
+    <Section id="banner">
+      <section className="hero">
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <div className="subtitle" style={{ color: '#fff' }}><span>Les <strong style={{ color: '#fff' }}>Franc-Comtois&middot;es</strong> s'organisent pour</span></div>
+            <h1 className="moon" style={{ color: '#f3ca83' }}><span>l'interdiction des pesticides de synthèse</span></h1>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Section>
     <Section id="evenements">
       <section className="section">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-hidden-touch">
-              <img src={AfficheAvril} alt="Le 5 avril 2019, les jeunes à la une" style={{ width: '100%' }} />
+              <img src={AfficheAvril} alt="Le 5 avril 2019, les jeunes à la une" style={{ width: '100%', minHeight: 195 }} />
             </div>
             <div className="column">
-              <img src={AfficheMai} alt="Le 3 mai 2019, retour des hirondelles avec la LPO" style={{ width: '100%' }} />
+              <img src={AfficheMai} alt="Le 3 mai 2019, retour des hirondelles avec la LPO" style={{ width: '100%', minHeight: 195 }} />
             </div>
           </div>
         </div>
@@ -57,29 +59,29 @@ const IndexPage = () => (
           <div className="columns has-text-centered is-vcentered">
             <div className="column">
               <h2>25 - Besançon</h2>
-              <div className="columns is-centered">
+              <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:coquelicots.besancon@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
-                <a className="follow" href="https://www.facebook.com/groups/coquelicots.besancon/">
+                <a target="_blank" className="follow" href="https://www.facebook.com/groups/coquelicots.besancon/">
                   <svg><use xlinkHref="#icon-facebook"></use></svg>
                 </a>
-                <a className="follow" href="https://www.instagram.com/coquelicots_besancon/?hl=fr">
+                <a target="_blank" className="follow" href="https://www.instagram.com/coquelicots_besancon/?hl=fr">
                   <svg><use xlinkHref="#icon-instagram"></use></svg>
                 </a>
               </div>
               <div className="newsletter">
-                <a href="https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4">S'abonner à la newsletter</a>
+                <a target="_blank" href="https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4">S'abonner à la newsletter</a>
               </div>
               <div><span className="has-text-weight-bold">Correspondante :</span> Emmanuelle Mercier</div>
             </div>
             <div className="column">
               <h2>70 - Melisey</h2>
-              <div className="columns is-centered">
+              <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:sylvie.claudel70@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
-                <a className="follow" href="https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/">
+                <a target="_blank" className="follow" href="https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/">
                   <svg><use xlinkHref="#icon-facebook"></use></svg>
                 </a>
               </div>
@@ -87,11 +89,11 @@ const IndexPage = () => (
             </div>
             <div className="column">
               <h2>25 - Valdahon</h2>
-              <div className="columns is-centered">
+              <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:lescoquelicotsduval@orange.fr">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
-                <a className="follow" href="https://www.facebook.com/groups/587648611657634/">
+                <a target="_blank" className="follow" href="https://www.facebook.com/groups/587648611657634/">
                   <svg><use xlinkHref="#icon-facebook"></use></svg>
                 </a>
               </div>
@@ -101,7 +103,7 @@ const IndexPage = () => (
           <div className="columns">
             <div className="column">
               <h2>25 - Trépot</h2>
-              <div className="columns is-centered">
+              <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:christine.grandjeanc@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
@@ -110,7 +112,7 @@ const IndexPage = () => (
             </div>
             <div className="column">
               <h2>25 - Pelousey</h2>
-              <div className="columns is-centered">
+              <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:laujeang@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
@@ -119,7 +121,7 @@ const IndexPage = () => (
             </div>
             <div className="column">
               <h2>25 - Avanne</h2>
-              <div className="columns is-centered">
+              <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:jacqueline.poux@laposte.net">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
@@ -164,7 +166,7 @@ const IndexPage = () => (
     <Section id="actualite">
       <section className="section">
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '3rem' }}><span>Actualité</span></h1>
+          <h1 style={{ color: '#fff', marginBottom: '3rem' }}><span>Actualités</span></h1>
           <div className="columns is-multiline">
             <article className="column is-half">
               <div className="box">

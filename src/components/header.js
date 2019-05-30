@@ -54,13 +54,34 @@ const Header = class extends React.Component {
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container is-fluid">
             <div className="navbar-brand">
-              <Link className="navbar-item logo" to="/" title={this.props.siteTitle}>
-                <Logo style={{ width: 60,  height: 60 }} />
-                <h1 className="moon">
-                  <span className="is-hidden-desktop-only is-hidden-mobile">Nous voulons des coquelicots - </span>
-                  Franche-Comté
-                </h1>
-              </Link>
+              <SectionLink section="banner">
+                {({ onClick }) => 
+                  <Link
+                    to="/"
+                    className="navbar-item logo"
+                    title={this.props.siteTitle}
+                    onClick={
+                      (evt) => {
+                        if (this.props.isIndex) {
+                          evt.preventDefault()
+                        }
+                        
+                        this.setState({
+                          active: false,
+                          navBarActiveClass: ''
+                        })
+                        onClick()
+                      }
+                    }
+                  >
+                    <Logo style={{ width: 60,  height: 60 }} />
+                    <h1 className="moon">
+                      <span className="is-hidden-desktop-only is-hidden-mobile">Nous voulons des coquelicots - </span>
+                      Franche-Comté
+                    </h1>
+                  </Link>
+                }
+              </SectionLink>
     
               <div
                 className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -79,7 +100,7 @@ const Header = class extends React.Component {
               <div className="navbar-end">
                 <MenuItem sectionName="evenements" sectionLabel="Évènements" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
                 <MenuItem sectionName="contacts" sectionLabel="Les groupes locaux" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
-                <MenuItem sectionName="actualite" sectionLabel="Actualité" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
+                <MenuItem sectionName="actualite" sectionLabel="Actualités" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
                 <MenuItem sectionName="nos-soutiens" sectionLabel="Nos soutiens" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
                 <MenuItem sectionName="l-appel" sectionLabel="L'appel des coquelicots" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
               </div>

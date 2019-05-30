@@ -10,6 +10,9 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Futura from "../fonts/FuturaStd-Medium.woff2"
+import Moon from "../fonts/Moon-Flower.woff2"
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -69,7 +72,18 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="preload"
+        as="font"
+        href={Futura}
+        type="font/woff2"
+        crossOrigin="anonymous" />
+      <link rel="preload"
+        as="font"
+        href={Moon}
+        type="font/woff2"
+        crossOrigin="anonymous" />
+    </Helmet>
   )
 }
 

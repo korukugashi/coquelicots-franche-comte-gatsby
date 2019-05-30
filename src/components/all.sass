@@ -4,6 +4,7 @@
     font-style: normal
     src: url(../fonts/Moon-Flower.eot)
     src: url(../fonts/Moon-Flower.eot#iefix) format("embedded-opentype"), url(../fonts/Moon-Flower.woff2) format("woff2"), url(../fonts/Moon-Flower.woff) format("woff"), url(../fonts/Moon-Flower.ttf) format("truetype")
+    font-display: swap
 
 @font-face
     font-family: "Futura Std Medium"
@@ -11,6 +12,7 @@
     font-style: normal
     src: url(../fonts/FuturaStd-Medium.eot)
     src: url(../fonts/FuturaStd-Medium.eot#iefix) format("embedded-opentype"), url(../fonts/FuturaStd-Medium.woff2) format("woff2"), url(../fonts/FuturaStd-Medium.woff) format("woff"), url(../fonts/FuturaStd-Medium.ttf) format("truetype")
+    font-display: swap
 
     
 @import "~bulma/sass/utilities/initial-variables"
@@ -98,7 +100,7 @@ iframe
 .region
     background-color: #6a1111
     background-image: url(../images/poppy.svg)
-    background-size: 800px
+    background-size: 100px
     background-position: 50% 0
 
     h1
@@ -138,9 +140,10 @@ iframe
         stroke: #000
 
 #banner
-    background-color: $grass-green
-    background-image: url(../images/poison.svg)
-    background-size: contain
+    section
+        background-color: $grass-green
+        background-image: url(../images/poison.svg)
+        background-size: contain
 
     h1
         margin-top: 0.5rem
