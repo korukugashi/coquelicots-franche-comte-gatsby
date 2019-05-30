@@ -63,15 +63,15 @@ const IndexPage = () => (
                 <a className="follow" href="mailto:coquelicots.besancon@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
-                <a target="_blank" className="follow" href="https://www.facebook.com/groups/coquelicots.besancon/">
+                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.facebook.com/groups/coquelicots.besancon/">
                   <svg><use xlinkHref="#icon-facebook"></use></svg>
                 </a>
-                <a target="_blank" className="follow" href="https://www.instagram.com/coquelicots_besancon/?hl=fr">
+                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.instagram.com/coquelicots_besancon/?hl=fr">
                   <svg><use xlinkHref="#icon-instagram"></use></svg>
                 </a>
               </div>
               <div className="newsletter">
-                <a target="_blank" href="https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4">S'abonner à la newsletter</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4">S'abonner à la newsletter</a>
               </div>
               <div><span className="has-text-weight-bold">Correspondante :</span> Emmanuelle Mercier</div>
             </div>
@@ -81,7 +81,7 @@ const IndexPage = () => (
                 <a className="follow" href="mailto:sylvie.claudel70@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
-                <a target="_blank" className="follow" href="https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/">
+                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/">
                   <svg><use xlinkHref="#icon-facebook"></use></svg>
                 </a>
               </div>
@@ -93,7 +93,7 @@ const IndexPage = () => (
                 <a className="follow" href="mailto:lescoquelicotsduval@orange.fr">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
                 </a>
-                <a target="_blank" className="follow" href="https://www.facebook.com/groups/587648611657634/">
+                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.facebook.com/groups/587648611657634/">
                   <svg><use xlinkHref="#icon-facebook"></use></svg>
                 </a>
               </div>
