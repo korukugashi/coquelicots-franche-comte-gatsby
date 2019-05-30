@@ -56,9 +56,9 @@ const IndexPage = () => (
       <section className="section region">
         <div className="container">
           <h1 style={{ color: '#fff' }}><span>Nous rejoindre en Franche-Comté</span></h1>
-          <div className="columns has-text-centered is-vcentered">
-            <div className="column">
-              <h2>25 - Besançon</h2>
+          <div className="columns has-text-centered is-vcentered is-multiline is-centered">
+            <div className="column is-3">
+              <h2>Besançon (25)</h2>
               <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:coquelicots.besancon@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
@@ -75,8 +75,8 @@ const IndexPage = () => (
               </div>
               <div><span className="has-text-weight-bold">Correspondante :</span> Emmanuelle Mercier</div>
             </div>
-            <div className="column">
-              <h2>70 - Melisey</h2>
+            <div className="column is-3">
+              <h2>Melisey (70)</h2>
               <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:sylvie.claudel70@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
@@ -87,8 +87,8 @@ const IndexPage = () => (
               </div>
               <div><span className="has-text-weight-bold">Correspondante :</span> Sylvie Claudel</div>
             </div>
-            <div className="column">
-              <h2>25 - Valdahon</h2>
+            <div className="column is-3">
+              <h2>Valdahon (25)</h2>
               <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:lescoquelicotsduval@orange.fr">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
@@ -99,10 +99,8 @@ const IndexPage = () => (
               </div>
               <div><span className="has-text-weight-bold">Correspondant :</span> Patrick</div>
             </div>
-          </div>
-          <div className="columns">
-            <div className="column">
-              <h2>25 - Trépot</h2>
+            <div className="column is-3">
+              <h2>Trépot (25)</h2>
               <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:christine.grandjeanc@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
@@ -110,8 +108,8 @@ const IndexPage = () => (
               </div>
               <div><span className="has-text-weight-bold">Correspondante :</span> Christine Grandjean</div>
             </div>
-            <div className="column">
-              <h2>25 - Pelousey</h2>
+            <div className="column is-3">
+              <h2>Pelousey (25)</h2>
               <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:laujeang@gmail.com">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
@@ -119,8 +117,8 @@ const IndexPage = () => (
               </div>
               <div><span className="has-text-weight-bold">Correspondante :</span> Laurence Jeanguyot</div>
             </div>
-            <div className="column">
-              <h2>25 - Avanne</h2>
+            <div className="column is-3">
+              <h2>Avanne (25)</h2>
               <div className="is-flex columns is-centered">
                 <a className="follow" href="mailto:jacqueline.poux@laposte.net">
                   <svg className="email"><use xlinkHref="#icon-email"></use></svg>
@@ -146,7 +144,7 @@ const IndexPage = () => (
           <div className="column">
             <article>
               <h2>Les jeunes coquelicots</h2>
-              <p className="has-text-centered"><img src={JeunesClimat} alt="Jeunes et climat" style={{ maxWidth: 300 }} /></p>
+              <p className="has-text-centered"><img className="lazyload" data-src={JeunesClimat} alt="Jeunes et climat" style={{ maxWidth: 300 }} /></p>
               <p>De jeunes collégiens, lycéens et étudiants sont engagés dans le mouvement des coquelicots depuis octobre.</p>
               <p>Le lien s’est fait naturellement avec les marches pour le climat et les grèves climatiques de la jeunesse d’Europe et de Besançon !</p>
             </article>
@@ -204,6 +202,7 @@ const IndexPage = () => (
       <section className="section" style={{ paddingTop: '4rem', paddingBottom: '6rem' }}>
         <div className="container">
           <h1 style={{ marginBottom: '4rem' }}>Nos soutiens</h1>
+          <h2>Associations</h2>
           <div className="columns is-multiline is-vcentered has-text-centered">
             <div className="column">
               <a href="#nos-soutiens">
@@ -251,6 +250,8 @@ const IndexPage = () => (
               </a>
             </div>
           </div>
+          <h2>Mairies</h2>
+          <h2>Commerçants locaux</h2>
         </div>
       </section>
     </Section>

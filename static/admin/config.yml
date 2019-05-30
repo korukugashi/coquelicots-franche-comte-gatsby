@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: korukugashi/coquelicots-franche-comte-gatsby
+  branch: design
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: affiches
+    label: Affiches
+    folder: data/affiches
+    create: true
+    fields:
+      - { name: image, label: Image, widget: image}
+      - { name: title, label: Description de l'affiche }
+      - { name: date, label: Date de l'évènement, widget: date, dateFormat: DD/MM/YYYY, format: DD/MM/YYYY }
+  - name: groupes
+    label: Groupes
+    folder: data/groupes
+    create: true
+    fields:
+      - { name: title, label: Groupes }
+      - name: groupes
+        label: Groupes
+        widget: list
+        fields:
+          - { name: commune, label: Nom de la commune du groupe }
+          - { name: departement, label: Code département, widget: number, min: 1, max: 101 }
+          - { name: correspondant, label: Nom du correspondant }
+          - { name: genre, label: Genre du correspondant, options: [ Féminin, Masculin ], default: Féminin, widget: select }
+          - { name: email, label: Email }
+          - { name: facebook, label: Lien page Facebook, required: false }
+          - { name: twitter, label: Lien compte Twitter, required: false }
+          - { name: instagram, label: Lien compte Instagram, required: false }
+          - { name: youtube, label: Lien chaine Youtube, required: false }
+          - { name: newsletter, label: Lien newsletter, required: false }
+  - name: actualites
+    label: Actualités
+    folder: data/actualites
+    create: true
+    fields:
+      - { name: date, label: Date de l'actualité, widget: date, dateFormat: DD/MM/YYYY, format: DD/MM/YYYY }
+      - { name: title, label: Titre de l'article }
+      - { name: content, label: Contenu de l'article, widget: markdown, buttons: [ bold, italic, link, bulleted-list, numbered-list ] }
+      - name: photos
+        label: Photos
+        widget: list
+        fields:
+          - { name: image, label: Image, widget: image}
+          - { name: description, label: Description de l'image }
+  - name: soutiens
+    label: Soutiens
+    folder: data/soutiens
+    create: true
+    fields:
+      - { name: title, label: Soutiens }
+      - name: associations
+        label: Associations
+        widget: list
+        fields:
+          - { name: title, label: Nom de l'association }
+          - { name: link, label: Lien vers le site de l'association, widget: string }
+          - { name: logo, label: Logo de l'association, widget: image}
+      - name: mairies
+        label: Mairies
+        widget: list
+        fields:
+          - { name: title, label: Nom de la commune }
+          - { name: link, label: Lien vers le site de la commune, widget: string, required: false }
+      - name: commercants
+        label: Commercants
+        widget: list
+        fields:
+          - { name: title, label: Nom du commerçant }
+          - { name: link, label: Lien vers le site du commerçant, widget: string, required: false }
