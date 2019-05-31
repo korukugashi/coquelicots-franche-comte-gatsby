@@ -4,6 +4,9 @@ import { Section } from "react-scroll-section";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Groups from "../components/groups"
+import Associations from "../components/associations"
+import Mairies from "../components/mairies"
+import Commercants from "../components/commercants"
 
 import AfficheAvril from "../images/2019-04-affiche.svg"
 import AfficheMai from "../images/2019-05-affiche.svg"
@@ -14,15 +17,6 @@ import Plantation from "../images/galerie/plantation.jpg"
 import Chant from "../images/galerie/chant.jpg"
 import Marche from "../images/galerie/marche.jpg"
 import Rassemblement from "../images/galerie/rassemblement.jpg"
-import Biocoop from "../images/partenaires/biocoop.png"
-import Fne from "../images/partenaires/fne.png"
-import Gloria from "../images/partenaires/gloria.jpeg"
-import Hophophop from "../images/partenaires/hophophop.jpg"
-import Humanimo from "../images/partenaires/humanimo.png"
-import Interbio from "../images/partenaires/interbio.png"
-import Natureetdecouverte from "../images/partenaires/natureetdecouverte.jpg"
-import Terredelien from "../images/partenaires/terredelien.jpg"
-import Velorution from "../images/partenaires/velorution.png"
 
 const IndexPage = () => (
   <Layout isIndex={true}>
@@ -126,61 +120,10 @@ const IndexPage = () => (
       </section>
     </Section>
     <Section id="nos-soutiens">
-      <section className="section" style={{ paddingTop: '4rem', paddingBottom: '6rem' }}>
-        <div className="container">
-          <h1 style={{ marginBottom: '4rem' }}>Nos soutiens</h1>
-          <h2>Associations</h2>
-          <div className="columns is-multiline is-vcentered has-text-centered">
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Biocoop} alt="Biocopop" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Fne} alt="FNE 25-90" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Gloria} alt="Gloria" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Hophophop} alt="HopHopHop" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Humanimo} alt="Humanimo" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Interbio} alt="Interbio" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Natureetdecouverte} alt="Nature et découverte" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Terredelien} alt="Terre de Liens" />
-              </a>
-            </div>
-            <div className="column">
-              <a href="#nos-soutiens">
-                <img src={Velorution} alt="Vélorution" />
-              </a>
-            </div>
-          </div>
-          <h2>Mairies</h2>
-          <h2>Commerçants locaux</h2>
-        </div>
-      </section>
+      <h1 style={{ marginTop: '4rem' }}>Nos soutiens</h1>
+      <Associations />
+      <Mairies />
+      <Commercants />
     </Section>
     <Section id="l-appel">
       <section className="section">

@@ -7,14 +7,15 @@ module.exports = {
     siteUrl: `https://www.coquelicotfranchecomte.org`
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `uploads`,
+        path: `${__dirname}/static/assets`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
         path: `${__dirname}/data`,
@@ -26,6 +27,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-relative-images',,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -35,9 +37,24 @@ module.exports = {
               maxWidth: 590,
             },
           },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

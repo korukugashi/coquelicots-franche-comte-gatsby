@@ -4,11 +4,28 @@ associations:
   - link: 'https://www.biocoop.fr/'
     logo: /assets/biocoop.png
     title: Biocoop
+  - link: 'https://www.biocoop.fr/'
+    logo: /assets/biocoop.png
+    title: Biocoop
+  - link: 'https://www.biocoop.fr/'
+    logo: /assets/biocoop.png
+    title: Biocoop
 mairies:
   - link: 'http://www.besancon.fr/'
-    title: Besançon
+    title: Ville de Besançon
+  - link: 'http://osselle-routelle.fr/'
+    title: Commune d'Osselle-Routelle
+  - title: Exemple 3
+  - title: Exemple 4
 commercants:
-  - link: 'http://example.com'
-    title: Test
+  - link: 'https://www.biocoop.fr/'
+    logo: /assets/biocoop.png
+    title: Biocoop
+  - link: 'https://www.biocoop.fr/'
+    logo: /assets/biocoop.png
+    title: Biocoop
+  - link: 'https://www.biocoop.fr/'
+    logo: /assets/biocoop.png
+    title: Biocoop
 ---
 

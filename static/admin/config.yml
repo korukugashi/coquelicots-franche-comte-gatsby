@@ -63,7 +63,7 @@ collections:
         widget: list
         fields:
           - { name: title, label: Nom de l'association }
-          - { name: link, label: Lien vers le site de l'association, widget: string }
+          - { name: link, label: Lien vers le site de l'association, widget: string, required: false }
           - { name: logo, label: Logo de l'association, widget: image}
       - name: mairies
         label: Mairies
@@ -77,6 +77,7 @@ collections:
         fields:
           - { name: title, label: Nom du commerçant }
           - { name: link, label: Lien vers le site du commerçant, widget: string, required: false }
+          - { name: logo, label: Logo du commerçant, widget: image}
   - name: galerie
     label: Galerie
     folder: data/galerie
