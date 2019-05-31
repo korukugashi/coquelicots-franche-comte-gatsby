@@ -1,6 +1,6 @@
 ---
-image: /assets/rassemblement.jpg
+image: /assets/chant.jpg
 title: Coquelicots Besançon
-date: 04/01/2019
+date: 01/02/2019
 ---
 
