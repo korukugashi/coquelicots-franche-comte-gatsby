@@ -3,8 +3,17 @@ import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const Logo = ({ fluid, alt }) => (
-    <Img fluid={fluid} alt={alt} style={{ maxWidth: 120, margin: '0 auto' }} />
+const Logo = ({ organism }) => ( 
+  <Img
+    fluid={organism.logo.childImageSharp.fluid}
+    alt={organism.title}
+    style={{
+      maxWidth: organism.logo.childImageSharp.fluid.presentationWidth,
+      height: organism.logo.childImageSharp.fluid.presentationWidth,
+      margin: "0 auto",
+    }}
+    imgStyle={{ objectFit: "contain" }}
+  />
 )
 
 class Commercants extends React.Component {
@@ -13,22 +22,30 @@ class Commercants extends React.Component {
     const { edges } = data.allMarkdownRemark
 
     return (
-        <section className="section" id="commercants">
-          <div className="container">
-            <h2>Commerçants</h2>
-            <ul class="columns is-multiline is-centered">
-              {edges && edges[0].node.frontmatter.commercants && edges[0].node.frontmatter.commercants.map(organism => (
-                  <li className="column is-2 is-centered">
-                    {organism.link ? (
-                      <a href={organism.link} target="_blank" rel="noopener noreferrer">
-                        <Logo fluid={organism.logo.childImageSharp.fluid} alt={organism.title} />
-                      </a>
-                    ) : <Logo fluid={organism.logo.childImageSharp.fluid} alt={organism.title} />}
-                  </li>
-                ))}
-            </ul>
-          </div>
-        </section>
+      <section className="section" id="commercants">
+        <div className="container">
+          <h2>Commerçants</h2>
+          <ul class="columns is-multiline is-centered">
+            {edges &&
+              edges[0].node.frontmatter.commercants &&
+              edges[0].node.frontmatter.commercants.map(organism => (
+                <li className="column is-2">
+                  {organism.link ? (
+                    <a
+                      href={organism.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Logo organism={organism} />
+                    </a>
+                  ) : (
+                    <Logo organism={organism} />
+                  )}
+                </li>
+              ))}
+          </ul>
+        </div>
+      </section>
     )
   }
 }
@@ -57,11 +74,12 @@ export default () => (
                   link
                   title
                   logo {
-                      childImageSharp {
-                          fluid(maxWidth: 120, quality: 80) {
-                              ...GatsbyImageSharpFluid
-                          }
+                    childImageSharp {
+                      fluid(maxWidth: 120, quality: 80) {
+                        ...GatsbyImageSharpFluid_withWebp_noBase64
+                        presentationWidth
                       }
+                    }
                   }
                 }
               }
