@@ -21,7 +21,6 @@ collections:
   - name: groupes
     label: Groupes
     folder: data/groupes
-    create: true
     fields:
       - { name: title, label: Groupes }
       - name: groupes
@@ -56,7 +55,6 @@ collections:
   - name: soutiens
     label: Soutiens
     folder: data/soutiens
-    create: true
     fields:
       - { name: title, label: Soutiens }
       - name: associations
@@ -78,3 +76,11 @@ collections:
         fields:
           - { name: title, label: Nom du commerçant }
           - { name: link, label: Lien vers le site du commerçant, widget: string, required: false }
+  - name: galerie
+    label: Galerie
+    folder: data/galerie
+    create: true
+    fields:
+      - { name: image, label: Photo, widget: image}
+      - { name: title, label: Description de la photo }
+      - { name: date, label: Date de la photo, widget: date, dateFormat: DD/MM/YYYY, format: DD/MM/YYYY }
