@@ -1,4 +1,5 @@
 ---
+templateKey: soutiens
 title: Franche-Comté
 groupes:
   - commune: Besançon
@@ -10,6 +11,8 @@ groupes:
     instagram: 'https://www.instagram.com/coquelicots_besancon/?hl=fr'
     newsletter: >-
       https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4
+    twitter: ''
+    youtube: ''
   - commune: Mélisey
     correspondant: Sylvie Claudel
     departement: 70

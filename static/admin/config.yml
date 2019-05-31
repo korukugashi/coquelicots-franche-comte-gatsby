@@ -27,15 +27,16 @@ collections:
         label: Groupes
         widget: list
         fields:
+          - { name: templateKey, label: Template Key, widget: hidden, default: soutiens }
           - { name: commune, label: Nom de la commune du groupe }
           - { name: departement, label: Code département, widget: number, min: 1, max: 101 }
           - { name: correspondant, label: Nom du correspondant }
           - { name: genre, label: Genre du correspondant, options: [ Féminin, Masculin ], default: Féminin, widget: select }
           - { name: email, label: Email }
           - { name: facebook, label: Lien page Facebook, required: false }
-          - { name: twitter, label: Lien compte Twitter, required: false }
+          - { name: twitter, label: Lien compte Twitter, required: false, default: '' }
           - { name: instagram, label: Lien compte Instagram, required: false }
-          - { name: youtube, label: Lien chaine Youtube, required: false }
+          - { name: youtube, label: Lien chaine Youtube, required: false, default: '' }
           - { name: newsletter, label: Lien newsletter, required: false }
   - name: actualites
     label: Actualités

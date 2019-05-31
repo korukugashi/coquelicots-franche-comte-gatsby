@@ -15,8 +15,11 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      options: {
+        name: `data`,
+        path: `${__dirname}/data`,
+      },
     },
-    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -56,6 +59,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {

@@ -3,6 +3,8 @@ import { Section } from "react-scroll-section";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Groups from "../components/groups"
+
 import AfficheAvril from "../images/2019-04-affiche.svg"
 import AfficheMai from "../images/2019-05-affiche.svg"
 import { ReactComponent as IconsSprite } from "../images/icons-sprite.svg"
@@ -53,82 +55,7 @@ const IndexPage = () => (
       <IconsSprite />
     </div>
     <Section id="contacts">
-      <section className="section region">
-        <div className="container">
-          <h1 style={{ color: '#fff' }}><span>Nous rejoindre en Franche-Comté</span></h1>
-          <div className="columns has-text-centered is-vcentered is-multiline is-centered">
-            <div className="column is-3">
-              <h2>Besançon (25)</h2>
-              <div className="is-flex columns is-centered">
-                <a className="follow" href="mailto:coquelicots.besancon@gmail.com">
-                  <svg className="email"><use xlinkHref="#icon-email"></use></svg>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.facebook.com/groups/coquelicots.besancon/">
-                  <svg><use xlinkHref="#icon-facebook"></use></svg>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.instagram.com/coquelicots_besancon/?hl=fr">
-                  <svg><use xlinkHref="#icon-instagram"></use></svg>
-                </a>
-              </div>
-              <div className="newsletter">
-                <a target="_blank" rel="noopener noreferrer" href="https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4">S'abonner à la newsletter</a>
-              </div>
-              <div><span className="has-text-weight-bold">Correspondante :</span> Emmanuelle Mercier</div>
-            </div>
-            <div className="column is-3">
-              <h2>Melisey (70)</h2>
-              <div className="is-flex columns is-centered">
-                <a className="follow" href="mailto:sylvie.claudel70@gmail.com">
-                  <svg className="email"><use xlinkHref="#icon-email"></use></svg>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/">
-                  <svg><use xlinkHref="#icon-facebook"></use></svg>
-                </a>
-              </div>
-              <div><span className="has-text-weight-bold">Correspondante :</span> Sylvie Claudel</div>
-            </div>
-            <div className="column is-3">
-              <h2>Valdahon (25)</h2>
-              <div className="is-flex columns is-centered">
-                <a className="follow" href="mailto:lescoquelicotsduval@orange.fr">
-                  <svg className="email"><use xlinkHref="#icon-email"></use></svg>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" className="follow" href="https://www.facebook.com/groups/587648611657634/">
-                  <svg><use xlinkHref="#icon-facebook"></use></svg>
-                </a>
-              </div>
-              <div><span className="has-text-weight-bold">Correspondant :</span> Patrick</div>
-            </div>
-            <div className="column is-3">
-              <h2>Trépot (25)</h2>
-              <div className="is-flex columns is-centered">
-                <a className="follow" href="mailto:christine.grandjeanc@gmail.com">
-                  <svg className="email"><use xlinkHref="#icon-email"></use></svg>
-                </a>
-              </div>
-              <div><span className="has-text-weight-bold">Correspondante :</span> Christine Grandjean</div>
-            </div>
-            <div className="column is-3">
-              <h2>Pelousey (25)</h2>
-              <div className="is-flex columns is-centered">
-                <a className="follow" href="mailto:laujeang@gmail.com">
-                  <svg className="email"><use xlinkHref="#icon-email"></use></svg>
-                </a>
-              </div>
-              <div><span className="has-text-weight-bold">Correspondante :</span> Laurence Jeanguyot</div>
-            </div>
-            <div className="column is-3">
-              <h2>Avanne (25)</h2>
-              <div className="is-flex columns is-centered">
-                <a className="follow" href="mailto:jacqueline.poux@laposte.net">
-                  <svg className="email"><use xlinkHref="#icon-email"></use></svg>
-                </a>
-              </div>
-              <div><span className="has-text-weight-bold">Correspondante :</span> Jacqueline Poux</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Groups />
     </Section>
     <section className="section">
       <div className="container">
