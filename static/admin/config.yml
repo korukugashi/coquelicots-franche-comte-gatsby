@@ -15,6 +15,7 @@ collections:
     folder: data/affiches
     create: true
     fields:
+      - { name: templateKey, label: Template Key, widget: hidden, default: affiches }
       - { name: image, label: Image, widget: image}
       - { name: title, label: Description de l'affiche }
       - { name: date, label: Date de l'évènement, widget: date, dateFormat: DD/MM/YYYY }

@@ -3,6 +3,7 @@ import { Section } from "react-scroll-section";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Affiches from "../components/affiches"
 import Groups from "../components/groups"
 import Associations from "../components/associations"
 import Mairies from "../components/mairies"
@@ -10,8 +11,6 @@ import Commercants from "../components/commercants"
 import News from "../components/news"
 import Galerie from "../components/galerie"
 
-import AfficheAvril from "../images/2019-04-affiche.svg"
-import AfficheMai from "../images/2019-05-affiche.svg"
 import { ReactComponent as IconsSprite } from "../images/icons-sprite.svg"
 import JeunesClimat from "../images/jeunes-et-climat.jpg"
 
@@ -33,18 +32,7 @@ const IndexPage = () => (
       </section>
     </Section>
     <Section id="evenements">
-      <section className="section">
-        <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-hidden-touch">
-              <img src={AfficheAvril} alt="Le 5 avril 2019, les jeunes à la une" style={{ width: '100%', minHeight: 195 }} />
-            </div>
-            <div className="column">
-              <img src={AfficheMai} alt="Le 3 mai 2019, retour des hirondelles avec la LPO" style={{ width: '100%', minHeight: 195 }} />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Affiches />
     </Section>
     <div className="is-hidden">
       <IconsSprite />
