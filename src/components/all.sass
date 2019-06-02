@@ -247,3 +247,53 @@ iframe
         span
             padding: 4px 16px
             background: #036136
+
+@import "~slick-carousel/slick/slick.css"
+@import "~slick-carousel/slick/slick-theme.css"
+
+
+#photos::before
+    height: 0
+    margin-top: 0
+    
+#photos
+    position: relative
+    background: #f0f2f6
+    padding: 3rem 0 2rem
+
+    .slick-slider
+        height: 362px
+        overflow: hidden
+
+    @media screen and (max-width: 249px)
+        display: none
+
+    .section::before
+        display: block
+        width: 2.5rem
+        height: .3125rem
+        margin: -5px 0 3rem -1.25rem
+        padding: 0
+        content: ""
+        background: #097c47
+        position: absolute
+        top: 0
+        left: 50%
+
+.galerie-item
+    padding: 0 15px
+    text-align: center
+    max-width: calc(100vw - 50px)
+    overflow: hidden
+
+
+    .gatsby-image-wrapper
+        max-width: calc(100vw - 50px)
+
+.galerie-title
+    marginTop: 0.3rem
+    fontSize: 0.8rem
+    color: #555
+
+.galerie-date
+    font-size: 0.8rem

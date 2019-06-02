@@ -8,16 +8,12 @@ import Associations from "../components/associations"
 import Mairies from "../components/mairies"
 import Commercants from "../components/commercants"
 import News from "../components/news"
+import Galerie from "../components/galerie"
 
 import AfficheAvril from "../images/2019-04-affiche.svg"
 import AfficheMai from "../images/2019-05-affiche.svg"
 import { ReactComponent as IconsSprite } from "../images/icons-sprite.svg"
 import JeunesClimat from "../images/jeunes-et-climat.jpg"
-import Couture from "../images/galerie/couture.jpg"
-import Plantation from "../images/galerie/plantation.jpg"
-import Chant from "../images/galerie/chant.jpg"
-import Marche from "../images/galerie/marche.jpg"
-import Rassemblement from "../images/galerie/rassemblement.jpg"
 
 const IndexPage = () => (
   <Layout isIndex={true}>
@@ -78,14 +74,8 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <Section id="photos" className="is-hidden-touch">
-      <section className="section columns has-text-centered" style={{ padding: 0 }}>
-        <img className="lazyload" data-src={Rassemblement} alt="Rassemblement" />
-        <img className="lazyload" data-src={Chant} alt="Chant" />
-        <img className="lazyload" data-src={Couture} alt="Couture" />
-        <img className="lazyload" data-src={Plantation} alt="Plantation" />
-        <img className="lazyload" data-src={Marche} alt="Marche" />
-      </section>
+    <Section id="photos">
+      <Galerie />
     </Section>
     <Section id="actualite">
       <News />

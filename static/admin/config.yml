@@ -84,6 +84,7 @@ collections:
     folder: data/galerie
     create: true
     fields:
+      - { name: templateKey, label: Template Key, widget: hidden, default: galerie }
       - { name: image, label: Photo, widget: image}
       - { name: title, label: Description de la photo }
       - { name: date, label: Date de la photo, widget: date, dateFormat: DD/MM/YYYY }
