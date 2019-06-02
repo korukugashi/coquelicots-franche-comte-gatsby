@@ -89,3 +89,12 @@ collections:
       - { name: image, label: Photo, widget: image}
       - { name: title, label: Description de la photo }
       - { name: date, label: Date de la photo, widget: date, dateFormat: DD/MM/YYYY }
+  - name: partenaires
+    label: Groupes partenaires
+    folder: data/partenaires
+    create: true
+    fields:
+      - { name: templateKey, label: Template Key, widget: hidden, default: partenaires }
+      - { name: date, label: Date de l'information, widget: datetime, dateFormat: DD/MM/YYYY }
+      - { name: title, label: Titre de l'article }
+      - { name: content, label: Contenu de l'article, widget: markdown }
