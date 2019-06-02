@@ -30,8 +30,8 @@ class Groups extends React.Component {
           <div className="columns has-text-centered is-vcentered is-multiline is-centered">
             {groups &&
               groups[0].node.frontmatter.groupes &&
-              groups[0].node.frontmatter.groupes.map(group => (
-                <div className="column is-3">
+              groups[0].node.frontmatter.groupes.map((group, index) => (
+                <div className="column is-3" key={index}>
                   <h2>
                     {group.commune} ({group.departement})
                   </h2>
@@ -87,7 +87,7 @@ export default () => (
     query={graphql`
       query GroupsQuery {
         allMarkdownRemark(
-          filter: { frontmatter: { templateKey: { eq: "soutiens" } } }
+          filter: { frontmatter: { templateKey: { eq: "groupes" } } }
         ) {
           edges {
             node {

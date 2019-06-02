@@ -1,5 +1,5 @@
 ---
-templateKey: soutiens
+templateKey: groupes
 title: Franche-Comté
 groupes:
   - commune: Besançon

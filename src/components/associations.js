@@ -25,11 +25,11 @@ class Associations extends React.Component {
       <section className="section" id="associations">
         <div className="container">
           <h2>Associations</h2>
-          <ul class="columns is-multiline is-centered">
+          <ul className="columns is-multiline is-centered">
             {edges &&
               edges[0].node.frontmatter.associations &&
-              edges[0].node.frontmatter.associations.map(organism => (
-                <li className="column is-2">
+              edges[0].node.frontmatter.associations.map((organism, index) => (
+                <li className="column is-2" key={index}>
                   {organism.link ? (
                     <a
                       href={organism.link}

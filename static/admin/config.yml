@@ -17,17 +17,17 @@ collections:
     fields:
       - { name: image, label: Image, widget: image}
       - { name: title, label: Description de l'affiche }
-      - { name: date, label: Date de l'évènement, widget: date, dateFormat: DD/MM/YYYY, format: DD/MM/YYYY }
+      - { name: date, label: Date de l'évènement, widget: date, dateFormat: DD/MM/YYYY }
   - name: groupes
     label: Groupes
     folder: data/groupes
     fields:
       - { name: title, label: Groupes }
+      - { name: templateKey, label: Template Key, widget: hidden, default: groupes }
       - name: groupes
         label: Groupes
         widget: list
         fields:
-          - { name: templateKey, label: Template Key, widget: hidden, default: soutiens }
           - { name: commune, label: Nom de la commune du groupe }
           - { name: departement, label: Code département, widget: number, min: 1, max: 101 }
           - { name: correspondant, label: Nom du correspondant }
@@ -43,7 +43,8 @@ collections:
     folder: data/actualites
     create: true
     fields:
-      - { name: date, label: Date de l'actualité, widget: date, dateFormat: DD/MM/YYYY, format: DD/MM/YYYY }
+      - { name: templateKey, label: Template Key, widget: hidden, default: actualites }
+      - { name: date, label: Date de l'actualité, widget: datetime, dateFormat: DD/MM/YYYY }
       - { name: title, label: Titre de l'article }
       - { name: content, label: Contenu de l'article, widget: markdown, buttons: [ bold, italic, link, bulleted-list, numbered-list ] }
       - name: photos
@@ -85,4 +86,4 @@ collections:
     fields:
       - { name: image, label: Photo, widget: image}
       - { name: title, label: Description de la photo }
-      - { name: date, label: Date de la photo, widget: date, dateFormat: DD/MM/YYYY, format: DD/MM/YYYY }
+      - { name: date, label: Date de la photo, widget: date, dateFormat: DD/MM/YYYY }

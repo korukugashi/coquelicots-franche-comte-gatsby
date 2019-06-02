@@ -11,9 +11,9 @@ class Mairies extends React.Component {
         <section className="section" id="mairies">
           <div className="container">
             <h2>Mairies</h2>
-            <ul class="columns is-multiline has-text-centered">
-              {edges && edges[0].node.frontmatter.mairies && edges[0].node.frontmatter.mairies.map(mairie => (
-                  <li className="column is-6">
+            <ul className="columns is-multiline has-text-centered">
+              {edges && edges[0].node.frontmatter.mairies && edges[0].node.frontmatter.mairies.map((mairie, index) => (
+                  <li className="column is-6" key={index}>
                     {mairie.link ? (
                       <a href={mairie.link} target="_blank" rel="noopener noreferrer">
                         <svg>

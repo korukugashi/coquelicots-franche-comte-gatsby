@@ -7,6 +7,7 @@ import Groups from "../components/groups"
 import Associations from "../components/associations"
 import Mairies from "../components/mairies"
 import Commercants from "../components/commercants"
+import News from "../components/news"
 
 import AfficheAvril from "../images/2019-04-affiche.svg"
 import AfficheMai from "../images/2019-05-affiche.svg"
@@ -25,8 +26,12 @@ const IndexPage = () => (
       <section className="hero">
         <div className="hero-body">
           <div className="container has-text-centered">
-            <div className="subtitle" style={{ color: '#fff' }}><span>Les <strong style={{ color: '#fff' }}>Franc-Comtois&middot;es</strong> s'organisent pour</span></div>
-            <h1 className="moon" style={{ color: '#f3ca83' }}><span>l'interdiction des pesticides de synthèse</span></h1>
+            <div className="subtitle" style={{ color: '#fff' }}>
+              <span style={{ maxWidth: 422 }}>Les <strong style={{ color: '#fff' }}>Franc-Comtois&middot;es</strong> s'organisent pour</span>
+            </div>
+            <h1 className="moon" style={{ color: '#f3ca83' }}>
+              <span style={{ maxWidth: 722 }}>l'interdiction des pesticides de synthèse</span>
+            </h1>
           </div>
         </div>
       </section>
@@ -83,41 +88,7 @@ const IndexPage = () => (
       </section>
     </Section>
     <Section id="actualite">
-      <section className="section">
-        <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '3rem' }}><span>Actualités</span></h1>
-          <div className="columns is-multiline">
-            <article className="column is-half">
-              <div className="box">
-                <h2>Fleurissement</h2>
-                <time datetime="2019-05-19">06/05/2019</time>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel semper augue. Maecenas volutpat vitae elit a aliquet. Vestibulum malesuada eros sit amet accumsan consequat. Phasellus dolor erat, cursus id aliquam ut, pretium sit amet nibh. Integer ultricies magna quis magna scelerisque gravida. Nulla eu erat placerat, molestie urna gravida, vestibulum felis. Aliquam a euismod nisl. Nunc quis pharetra eros. Curabitur eget sagittis diam.</p>
-              </div>
-            </article>
-            <article className="column is-half">
-              <div className="box">
-                <h2>Rassemblements</h2>
-                <time datetime="2019-05-19">06/05/2019</time>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel semper augue. Maecenas volutpat vitae elit a aliquet. Vestibulum malesuada eros sit amet accumsan consequat. Phasellus dolor erat, cursus id aliquam ut, pretium sit amet nibh. Integer ultricies magna quis magna scelerisque gravida. Nulla eu erat placerat, molestie urna gravida, vestibulum felis. Aliquam a euismod nisl. Nunc quis pharetra eros. Curabitur eget sagittis diam.</p>
-              </div>
-            </article>
-            <article className="column is-half">
-              <div className="box">
-                <h2>Glyphosate 25</h2>
-                <time datetime="2019-05-19">06/05/2019</time>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel semper augue. Maecenas volutpat vitae elit a aliquet. Vestibulum malesuada eros sit amet accumsan consequat. Phasellus dolor erat, cursus id aliquam ut, pretium sit amet nibh. Integer ultricies magna quis magna scelerisque gravida. Nulla eu erat placerat, molestie urna gravida, vestibulum felis. Aliquam a euismod nisl. Nunc quis pharetra eros. Curabitur eget sagittis diam.</p>
-              </div>
-            </article>
-            <article className="column is-half">
-              <div className="box">
-                <h2>Creatifs Killers</h2>
-                <time datetime="2019-05-19">06/05/2019</time>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel semper augue. Maecenas volutpat vitae elit a aliquet. Vestibulum malesuada eros sit amet accumsan consequat. Phasellus dolor erat, cursus id aliquam ut, pretium sit amet nibh. Integer ultricies magna quis magna scelerisque gravida. Nulla eu erat placerat, molestie urna gravida, vestibulum felis. Aliquam a euismod nisl. Nunc quis pharetra eros. Curabitur eget sagittis diam.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <News />
     </Section>
     <Section id="nos-soutiens">
       <h1 style={{ marginTop: '4rem' }}>Nos soutiens</h1>
@@ -129,7 +100,7 @@ const IndexPage = () => (
       <section className="section">
         <div className="container">
           <h1><span>Soutenez-nous, signez l'appel national !</span></h1>
-          <iframe className="lazyload" data-src="https://nousvoulonsdescoquelicots.org/widget/" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" title="Appel des coquelicots"></iframe>
+          <iframe className="lazyload" data-src="https://nousvoulonsdescoquelicots.org/widget/" scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="Appel des coquelicots"></iframe>
         </div>
       </section>
     </Section>

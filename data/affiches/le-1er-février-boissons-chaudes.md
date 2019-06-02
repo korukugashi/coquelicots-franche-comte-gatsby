@@ -1,6 +1,6 @@
 ---
 image: /assets/02-affiche-fevrier.svg
 title: 'Le 1er février, boissons chaudes'
-date: 01/02/2019
+date: 2019-01-01T09:38:51.599Z
 ---
 

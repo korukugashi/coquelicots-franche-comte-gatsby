@@ -25,11 +25,11 @@ class Commercants extends React.Component {
       <section className="section" id="commercants">
         <div className="container">
           <h2>Commerçants</h2>
-          <ul class="columns is-multiline is-centered">
+          <ul className="columns is-multiline is-centered">
             {edges &&
               edges[0].node.frontmatter.commercants &&
-              edges[0].node.frontmatter.commercants.map(organism => (
-                <li className="column is-2">
+              edges[0].node.frontmatter.commercants.map((organism, index) => (
+                <li className="column is-2" key={index}>
                   {organism.link ? (
                     <a
                       href={organism.link}
