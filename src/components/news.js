@@ -33,7 +33,7 @@ class News extends React.Component {
                     <div className="box">
                         <h2>{post.frontmatter.title}</h2>
                         <time dateTime="2019-05-19">{post.frontmatter.date}</time>
-                        {post.frontmatter.content}
+                        <div dangerouslySetInnerHTML={{ __html: post.frontmatter.content }} />
                         {post.frontmatter.photos ? (
                           <div className="columns is-multiline is-centered" style={{ marginTop: '0.5rem' }}>
                           {post.frontmatter.photos.map((photo, index) => (

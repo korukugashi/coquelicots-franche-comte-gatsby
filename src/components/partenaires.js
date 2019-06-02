@@ -15,7 +15,7 @@ class Partenaires extends React.Component {
               partenaires.map(({ node: post }, index) => (
                 <article className="column is-half" key={index}>
                   <h2>{post.frontmatter.title}</h2>
-                  {post.frontmatter.content}
+                  <div dangerouslySetInnerHTML={{ __html: post.frontmatter.content }} />
                 </article>
               ))}
           </div>
