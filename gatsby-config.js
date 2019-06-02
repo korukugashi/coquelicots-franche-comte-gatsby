@@ -80,9 +80,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
-        //develop: true, // Activates purging in npm run develop
+        // develop: true, // Activates purging in npm run develop
         printRejected: true,
-        whitelist: ['has-text-weight-bold'],
+        whitelist: ['has-text-weight-bold', 'slick-slider', 'slider', 'variable-width', 'center',
+          'slick-track', 'slick-list', 'slick-slide', 'slick-loading', 'slick-initialized',
+          'dragging', 'slick-vertical', 'slick-arrow', 'slick-hidden', 'slick-prev', 'slick-next',
+          'slick-dotted', 'slick-dots', 'slick-active'],
       },
     }, // must be after other CSS plugins
   ],
