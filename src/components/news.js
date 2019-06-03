@@ -33,7 +33,7 @@ class News extends React.Component {
                     <div className="box">
                         <h2>{post.frontmatter.title}</h2>
                         <time dateTime="2019-05-19">{post.frontmatter.date}</time>
-                        <div dangerouslySetInnerHTML={{ __html: post.frontmatter.content }} />
+                        <div dangerouslySetInnerHTML={{ __html: post.html }} />
                         {post.frontmatter.photos ? (
                           <div className="columns is-multiline is-centered" style={{ marginTop: '0.5rem' }}>
                           {post.frontmatter.photos.map((photo, index) => (
@@ -73,9 +73,9 @@ export default () => (
             node {
               excerpt(pruneLength: 5000)
               id
+              html
               frontmatter {
                 title
-                content
                 date(formatString: "DD/MM/YYYY")
                 photos {
                   image {
