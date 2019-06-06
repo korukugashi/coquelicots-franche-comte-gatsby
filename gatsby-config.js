@@ -71,7 +71,7 @@ module.exports = {
       resolve: 'gatsby-plugin-matomo',
       options: {
         siteId: '1',
-        matomoUrl: 'https://koruku.alwaysdata.net/matomo/',
+        matomoUrl: 'https://koruku.alwaysdata.net/matomo',
         siteUrl: 'https://www.coquelicots-franche-comte.org',
         disableCookies: true,
         requireConsent: false,
