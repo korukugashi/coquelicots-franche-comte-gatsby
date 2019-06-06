@@ -47,7 +47,7 @@ collections:
       - { name: templateKey, label: Template Key, widget: hidden, default: actualites }
       - { name: date, label: Date de l'actualité, widget: datetime, dateFormat: DD/MM/YYYY }
       - { name: title, label: Titre de l'article }
-      - { name: content, label: Contenu de l'article, widget: markdown, buttons: [ bold, italic, link, bulleted-list, numbered-list ] }
+      - { name: body, label: Contenu de l'article, widget: markdown, buttons: [ bold, italic, link, bulleted-list, numbered-list ] }
       - name: photos
         label: Photos
         widget: list
@@ -97,4 +97,4 @@ collections:
       - { name: templateKey, label: Template Key, widget: hidden, default: partenaires }
       - { name: date, label: Date de l'information, widget: datetime, dateFormat: DD/MM/YYYY }
       - { name: title, label: Titre de l'article }
-      - { name: content, label: Contenu de l'article, widget: markdown }
+      - { name: body, label: Contenu de l'article, widget: markdown }

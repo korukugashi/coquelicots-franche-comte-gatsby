@@ -15,7 +15,7 @@ class Partenaires extends React.Component {
               partenaires.map(({ node: post }, index) => (
                 <article className="column is-half" key={index}>
                   <h2>{post.frontmatter.title}</h2>
-                  <div dangerouslySetInnerHTML={{ __html: post.frontmatter.content }} />
+                  <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 </article>
               ))}
           </div>
@@ -47,9 +47,9 @@ export default () => (
             node {
               excerpt(pruneLength: 5000)
               id
+              html
               frontmatter {
                 title
-                content
                 date(formatString: "DD/MM/YYYY")
               }
             }
