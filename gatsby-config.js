@@ -4,7 +4,7 @@ module.exports = {
     description: `Appel pour l'interdiction de tous les pesticides de synthèse. Retrouvez tous les collectifs près de chez vous en Franche-Comté.`,
     author: `@coquelicots_`,
     lang: `fr`,
-    siteUrl: `https://www.coquelicotfranchecomte.org`
+    siteUrl: `https://www.coquelicots-franche-comte.org`
   },
   plugins: [
     {
@@ -66,6 +66,16 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logo-les-coquelicots.svg`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://koruku.alwaysdata.net/matomo/',
+        siteUrl: 'https://www.coquelicots-franche-comte.org',
+        disableCookies: true,
+        requireConsent: false,
+      }
     },
     `gatsby-plugin-remove-serviceworker`,
     {
