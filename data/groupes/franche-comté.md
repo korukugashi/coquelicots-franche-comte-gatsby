@@ -13,12 +13,10 @@ groupes:
       https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4
     twitter: ''
     youtube: ''
-  - commune: Mélisey
-    correspondant: Sylvie Claudel
-    departement: 70
-    email: sylvie.claudel70@gmail.com
-    facebook: >-
-      https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/
+  - commune: Avanne
+    correspondant: Jacqueline Poux
+    departement: 25
+    email: jacqueline.poux@laposte.net
     genre: Féminin
   - commune: Valdahon
     correspondant: Patrick
@@ -36,10 +34,12 @@ groupes:
     departement: 25
     email: laujeang@gmail.com
     genre: Féminin
-  - commune: Avanne
-    correspondant: Jacqueline Poux
-    departement: 25
-    email: jacqueline.poux@laposte.net
+  - commune: Mélisey
+    correspondant: Sylvie Claudel
+    departement: 70
+    email: sylvie.claudel70@gmail.com
+    facebook: >-
+      https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/
     genre: Féminin
   - commune: Saint Loup
     correspondant: Sonia Schwartzler
