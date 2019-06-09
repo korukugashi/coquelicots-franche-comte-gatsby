@@ -30,9 +30,7 @@ class Affiches extends React.Component {
                         }
                         alt={affiche.node.frontmatter.title}
                         style={{
-                          maxWidth:
-                            affiche.node.frontmatter.image.childImageSharp.fluid
-                              .presentationWidth,
+                          maxWidth: 300,
                           margin: "0 auto",
                         }}
                         imgStyle={{ objectFit: "contain" }}
