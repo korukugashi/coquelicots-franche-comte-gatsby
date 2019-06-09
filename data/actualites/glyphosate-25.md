@@ -1,7 +1,7 @@
 ---
 templateKey: actualites
 date: 2019-06-07T09:38:51.599Z
-title: Glyphosate 25
+title: Campagne de presse Glyphosate 25
 photos:
   - description: Association HOP HOP HOP
     image: /assets/hophophop.jpg
