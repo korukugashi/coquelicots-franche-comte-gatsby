@@ -1,6 +1,6 @@
 ---
-templateKey: groupes
 title: Franche-Comté
+templateKey: groupes
 groupes:
   - commune: Besançon
     correspondant: Emmanuelle Mercier
@@ -13,12 +13,10 @@ groupes:
       https://us19.campaign-archive.com/home/?u=e4f8d15b855aa248931c06c42&id=4c400b31f4
     twitter: ''
     youtube: ''
-  - commune: Mélisey
-    correspondant: Sylvie Claudel
-    departement: 70
-    email: sylvie.claudel70@gmail.com
-    facebook: >-
-      https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/
+  - commune: Avanne
+    correspondant: Jacqueline Poux
+    departement: 25
+    email: jacqueline.poux@laposte.net
     genre: Féminin
   - commune: Valdahon
     correspondant: Patrick
@@ -28,18 +26,25 @@ groupes:
     genre: Masculin
   - commune: Trépot
     correspondant: Christine Grandjean
-    departement: 24
+    departement: 25
     email: christine.grandjeanc@gmail.com
     genre: Féminin
   - commune: Pelousey
     correspondant: Laurence Jeanguyot
-    departement: 24
+    departement: 25
     email: laujeang@gmail.com
     genre: Féminin
-  - commune: Avanne
-    correspondant: Jacqueline Poux
-    departement: 24
-    email: jacqueline.poux@laposte.net
+  - commune: Mélisey
+    correspondant: Sylvie Claudel
+    departement: 70
+    email: sylvie.claudel70@gmail.com
+    facebook: >-
+      https://www.facebook.com/Nous-voulons-des-coquelicots-Haute-Sa%C3%B4ne-299595797294662/
+    genre: Féminin
+  - commune: Saint Loup
+    correspondant: Sonia Schwartzler
+    departement: 70
+    email: lescoquelicots70800saintloup@gmail.com
     genre: Féminin
 ---
 
