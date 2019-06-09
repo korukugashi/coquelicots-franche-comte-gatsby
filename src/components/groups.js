@@ -1,14 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
+import Obfuscate from "react-obfuscate"
 
-const SocialLink = ({ link, network }) => {
+const SocialLink = ({ link, network, title }) => {
   if (!link) {
     return null
   }
 
   return (
-    <a target="_blank" rel="noopener noreferrer" className="follow" href={link}>
+    <a target="_blank" rel="noopener noreferrer" className="follow" href={link} title={title} aria-label={title}>
       <svg>
         <use xlinkHref={`#icon-${network}`} />
       </svg>
@@ -37,16 +38,16 @@ class Groups extends React.Component {
                   </h2>
                   <div className="is-flex columns is-centered">
                     {group.email ? (
-                      <a className="follow" href={`mailto:${group.email}`}>
-                        <svg className="email">
+                      <Obfuscate className="follow" email={group.email} obfuscateChildren={false}>
+                        <svg className="email" title="E-mail" aria-label="E-mail">
                           <use xlinkHref="#icon-email" />
                         </svg>
-                      </a>
+                      </Obfuscate>
                     ) : null}
-                    <SocialLink link={group.facebook} network="facebook" />
-                    <SocialLink link={group.twitter} network="twitter" />
-                    <SocialLink link={group.instagram} network="instagram" />
-                    <SocialLink link={group.youtube} network="youtube" />
+                    <SocialLink link={group.facebook} network="facebook" title="Facebook" />
+                    <SocialLink link={group.twitter} network="twitter" title="Twitter" />
+                    <SocialLink link={group.instagram} network="instagram" title="Instragram" />
+                    <SocialLink link={group.youtube} network="youtube" title="Youtube" />
                   </div>
                   {group.newsletter ? (
                     <div className="newsletter">

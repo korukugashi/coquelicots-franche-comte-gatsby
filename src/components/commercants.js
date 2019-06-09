@@ -1,20 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
-
-const Logo = ({ organism }) => ( 
-  <Img
-    fluid={organism.logo.childImageSharp.fluid}
-    alt={organism.title}
-    style={{
-      maxWidth: organism.logo.childImageSharp.fluid.presentationWidth,
-      height: organism.logo.childImageSharp.fluid.presentationWidth,
-      margin: "0 auto",
-    }}
-    imgStyle={{ objectFit: "contain" }}
-  />
-)
 
 class Commercants extends React.Component {
   render() {
@@ -25,23 +11,27 @@ class Commercants extends React.Component {
       <section className="section" id="commercants">
         <div className="container">
           <h2>Commerçants</h2>
-          <ul className="columns is-multiline is-centered">
+          <ul className="columns is-multiline has-text-centered">
             {edges &&
               edges[0].node.frontmatter.commercants &&
               edges[0].node.frontmatter.commercants.map((organism, index) => (
-                <li className="column is-2" key={index}>
-                  {organism.link ? (
-                    <a
-                      href={organism.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Logo organism={organism} />
-                    </a>
-                  ) : (
-                    <Logo organism={organism} />
-                  )}
-                </li>
+                <li className="column is-6" key={index}>
+                    {organism.link ? (
+                      <a href={organism.link} target="_blank" rel="noopener noreferrer">
+                        <svg>
+                          <use xlinkHref="#icon-commercant" />
+                        </svg>
+                        {organism.title}
+                      </a>
+                    ) : (
+                      <span>
+                        <svg>
+                          <use xlinkHref="#icon-commercant" />
+                        </svg>
+                        {organism.title}
+                      </span>
+                    )}
+                  </li>
               ))}
           </ul>
         </div>
@@ -73,14 +63,6 @@ export default () => (
                 commercants {
                   link
                   title
-                  logo {
-                    childImageSharp {
-                      fluid(maxWidth: 120, quality: 80) {
-                        ...GatsbyImageSharpFluid_withWebp_noBase64
-                        presentationWidth
-                      }
-                    }
-                  }
                 }
               }
             }

@@ -79,7 +79,6 @@ collections:
         fields:
           - { name: title, label: Nom du commerçant }
           - { name: link, label: Lien vers le site du commerçant, widget: string, required: false }
-          - { name: logo, label: Logo du commerçant, widget: image}
   - name: galerie
     label: Galerie
     folder: data/galerie

@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <section className="section">
       <div className="container">
         <h1>Page non trouvée</h1>
-        <p>Malheureusement, nous n'avons pas pu trouver la page que vous recherchez.</p>
+        <p className="has-text-centered">Malheureusement, nous n'avons pas pu trouver la page que vous recherchez.</p>
       </div>
     </section>
     

@@ -27,7 +27,7 @@ class News extends React.Component {
       <section className="section">
         <div className="container">
           <h1 style={{ color: '#fff', marginBottom: '3rem' }}><span>Actualités</span></h1>
-          <div className="columns is-multiline">
+          <div className="columns is-multiline is-centered">
             {news && news.map(({ node: post}, index) => (
                 <article className="column is-half" key={index}>
                     <div className="box">

@@ -25,18 +25,15 @@ mairies:
   - link: 'http://osselle-routelle.fr/'
     title: Commune d'Osselle-Routelle
   - link: 'http://www.montfaucon25.fr/'
-    title: Montfaucon
+    title: Commune de Montfaucon
 commercants:
   - link: 'https://www.biocoop.fr/'
-    logo: /assets/biocoop.png
     title: Biocoop
   - link: ''
-    logo: /assets/gloria.jpeg
     title: Gloria
   - link: 'https://www.natureetdecouvertes.com/magasins/doubs/besancon'
-    logo: /assets/natureetdecouverte.jpg
     title: Nature et découvertes
-  - logo: /assets/terredelien.jpg
+  - link: ''
     title: 'Chez Nathalie, épicerie de quartier rue Gabriel Plançon Besançon.'
 ---
 
