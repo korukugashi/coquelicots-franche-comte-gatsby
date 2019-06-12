@@ -46,5 +46,10 @@ groupes:
     departement: 70
     email: lescoquelicots70800saintloup@gmail.com
     genre: Féminin
+  - commune: Vesoul
+    correspondant: Odilon Semprey
+    departement: 70
+    email: odilon.semprey@ac-besancon.fr
+    genre: Féminin
 ---
 
