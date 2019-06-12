@@ -3,18 +3,40 @@ import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const Logo = ({ organism }) => ( 
-    <Img
-      fluid={organism.logo.childImageSharp.fluid}
-      alt={organism.title}
-      style={{
-        maxWidth: organism.logo.childImageSharp.fluid.presentationWidth,
-        height: organism.logo.childImageSharp.fluid.presentationWidth,
-        margin: "0 auto",
-      }}
-      imgStyle={{ objectFit: "contain" }}
-    />
-  )
+const Logo = ({ organism }) => (
+  <>
+    {organism.logo && organism.logo.childImageSharp ? (
+      <Img
+        fluid={organism.logo.childImageSharp.fluid}
+        alt={organism.title}
+        style={{
+          maxWidth: organism.logo.childImageSharp.fluid.presentationWidth,
+          height: organism.logo.childImageSharp.fluid.presentationWidth,
+          margin: "0 auto",
+        }}
+        imgStyle={{ objectFit: "contain" }}
+      />
+    ) : (
+      <img
+        src={organism.logo}
+        alt={organism.title}
+        style={{ maxWidth: 120 }}
+      />
+    )}
+  </>
+)
+
+export const AssociationTemplate = ({ organism, index }) => (
+  <li className="column is-2" key={index}>
+    {organism.link ? (
+      <a href={organism.link} target="_blank" rel="noopener noreferrer">
+        <Logo organism={organism} />
+      </a>
+    ) : (
+      <Logo organism={organism} />
+    )}
+  </li>
+)
 
 class Associations extends React.Component {
   render() {
@@ -29,19 +51,7 @@ class Associations extends React.Component {
             {edges &&
               edges[0].node.frontmatter.associations &&
               edges[0].node.frontmatter.associations.map((organism, index) => (
-                <li className="column is-2" key={index}>
-                  {organism.link ? (
-                    <a
-                      href={organism.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Logo organism={organism} />
-                    </a>
-                  ) : (
-                    <Logo organism={organism} />
-                  )}
-                </li>
+                <AssociationTemplate index={index} organism={organism} />
               ))}
           </ul>
         </div>

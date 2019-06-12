@@ -1,6 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
+import Content, { HTMLContent } from "./Content"
+
+export const PartenaireTemplate = ({ title, content, contentComponent }) => {
+  const PostContent = contentComponent || Content
+
+  return (
+    <div>
+      <h2>{title}</h2>
+      <PostContent content={content} />
+    </div>
+  )
+}
 
 class Partenaires extends React.Component {
   render() {
@@ -14,8 +26,11 @@ class Partenaires extends React.Component {
             {partenaires &&
               partenaires.map(({ node: post }, index) => (
                 <article className="column is-half" key={index}>
-                  <h2>{post.frontmatter.title}</h2>
-                  <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                  <PartenaireTemplate
+                    title={post.frontmatter.title}
+                    content={post.html}
+                    contentComponent={HTMLContent}
+                  />
                 </article>
               ))}
           </div>

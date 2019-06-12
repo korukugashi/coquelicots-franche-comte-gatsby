@@ -2,6 +2,26 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
 
+export const CommercantTemplate = ({ organism, index }) => (
+  <li className="column is-6" key={index}>
+    {organism.link ? (
+      <a href={organism.link} target="_blank" rel="noopener noreferrer">
+        <svg>
+          <use xlinkHref="#icon-commercant" />
+        </svg>
+        {organism.title}
+      </a>
+    ) : (
+      <span>
+        <svg>
+          <use xlinkHref="#icon-commercant" />
+        </svg>
+        {organism.title}
+      </span>
+    )}
+  </li>
+)
+
 class Commercants extends React.Component {
   render() {
     const { data } = this.props
@@ -15,23 +35,7 @@ class Commercants extends React.Component {
             {edges &&
               edges[0].node.frontmatter.commercants &&
               edges[0].node.frontmatter.commercants.map((organism, index) => (
-                <li className="column is-6" key={index}>
-                    {organism.link ? (
-                      <a href={organism.link} target="_blank" rel="noopener noreferrer">
-                        <svg>
-                          <use xlinkHref="#icon-commercant" />
-                        </svg>
-                        {organism.title}
-                      </a>
-                    ) : (
-                      <span>
-                        <svg>
-                          <use xlinkHref="#icon-commercant" />
-                        </svg>
-                        {organism.title}
-                      </span>
-                    )}
-                  </li>
+                <CommercantTemplate index={index} organism={organism} />
               ))}
           </ul>
         </div>

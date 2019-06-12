@@ -1,7 +1,7 @@
 ---
 templateKey: galerie
 image: /assets/couture.jpg
-title: Coquelicots Besançon - banderoles
+title: Atelier créatif 
 date: 2019-03-01T09:38:51.599Z
 ---
 

@@ -2,21 +2,57 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Content, { HTMLContent } from "./Content"
 
-const Image = ({ photo }) => ( 
+const Image = ({ photo }) => (
   <div className="column is-6">
-    <Img
-      fluid={photo.image.childImageSharp.fluid}
-      alt={photo.description}
-      style={{
-        maxWidth: photo.image.childImageSharp.fluid.presentationWidth,
-        height: photo.image.childImageSharp.fluid.presentationWidth,
-        margin: "0 auto",
-      }}
-      imgStyle={{ objectFit: "contain" }}
-    />
+    {photo.image && photo.image.childImageSharp ? (
+      <Img
+        fluid={photo.image.childImageSharp.fluid}
+        alt={photo.description}
+        style={{
+          maxWidth: photo.image.childImageSharp.fluid.presentationWidth,
+          margin: "0 auto",
+        }}
+        imgStyle={{ objectFit: "contain" }}
+      />
+    ) : (
+      <img
+        src={photo.image}
+        alt={photo.description}
+        style={{ maxWidth: 300 }}
+      />
+    )}
   </div>
 )
+
+export const ActualiteTemplate = ({
+  title,
+  date,
+  content,
+  photos,
+  contentComponent,
+}) => {
+  const PostContent = contentComponent || Content
+
+  return (
+    <div className="box">
+      <h2>{title}</h2>
+      <time dateTime="2019-05-19">{date}</time>
+      <PostContent content={content} />
+      {photos ? (
+        <div
+          className="columns is-multiline is-centered"
+          style={{ marginTop: "0.5rem" }}
+        >
+          {photos.map((photo, index) => (
+            <Image photo={photo} key={index} />
+          ))}
+        </div>
+      ) : null}
+    </div>
+  )
+}
 
 class News extends React.Component {
   render() {
@@ -26,22 +62,20 @@ class News extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '3rem' }}><span>Actualités</span></h1>
+          <h1 style={{ color: "#fff", marginBottom: "3rem" }}>
+            <span>Actualités</span>
+          </h1>
           <div className="columns is-multiline is-centered">
-            {news && news.map(({ node: post}, index) => (
+            {news &&
+              news.map(({ node: post }, index) => (
                 <article className="column is-half" key={index}>
-                    <div className="box">
-                        <h2>{post.frontmatter.title}</h2>
-                        <time dateTime="2019-05-19">{post.frontmatter.date}</time>
-                        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                        {post.frontmatter.photos ? (
-                          <div className="columns is-multiline is-centered" style={{ marginTop: '0.5rem' }}>
-                          {post.frontmatter.photos.map((photo, index) => (
-                              <Image photo={photo} key={index} />
-                            ))}
-                          </div>
-                        ) : null}
-                    </div>
+                  <ActualiteTemplate
+                    title={post.frontmatter.title}
+                    date={post.frontmatter.date}
+                    content={post.html}
+                    contentComponent={HTMLContent}
+                    photos={post.frontmatter.photos}
+                  />
                 </article>
               ))}
           </div>
@@ -80,7 +114,7 @@ export default () => (
                 photos {
                   image {
                     childImageSharp {
-                      fluid(maxWidth: 120, quality: 80) {
+                      fluid(maxWidth: 300, quality: 80) {
                         ...GatsbyImageSharpFluid_withWebp_noBase64
                         presentationWidth
                       }

@@ -9,13 +9,65 @@ const SocialLink = ({ link, network, title }) => {
   }
 
   return (
-    <a target="_blank" rel="noopener noreferrer" className="follow" href={link} title={title} aria-label={title}>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="follow"
+      href={link}
+      title={title}
+      aria-label={title}
+    >
       <svg>
         <use xlinkHref={`#icon-${network}`} />
       </svg>
     </a>
   )
 }
+
+export const GroupeTemplate = ({
+  index,
+  group
+}) => (
+  <div className="column is-3" key={index}>
+    <h2>
+      {group.commune} ({group.departement})
+    </h2>
+    <div className="is-flex columns is-centered">
+      {group.email ? (
+        <Obfuscate
+          className="follow"
+          email={group.email}
+          obfuscateChildren={false}
+        >
+          <svg className="email" title="E-mail" aria-label="E-mail">
+            <use xlinkHref="#icon-email" />
+          </svg>
+        </Obfuscate>
+      ) : null}
+      <SocialLink link={group.facebook} network="facebook" title="Facebook" />
+      <SocialLink link={group.twitter} network="twitter" title="Twitter" />
+      <SocialLink
+        link={group.instagram}
+        network="instagram"
+        title="Instragram"
+      />
+      <SocialLink link={group.youtube} network="youtube" title="Youtube" />
+    </div>
+    {group.newsletter ? (
+      <div className="newsletter">
+        <a target="_blank" rel="noopener noreferrer" href={group.newsletter}>
+          S'abonner à la newsletter
+        </a>
+      </div>
+    ) : null}
+    <div>
+      <span className="has-text-weight-bold">
+        {`Correspondant${group.genre === "Féminin" ? "e" : ""} :`}
+      </span>{" "}
+      {group.correspondant}
+    </div>
+  </div>
+)
 
 class Groups extends React.Component {
   render() {
@@ -32,41 +84,7 @@ class Groups extends React.Component {
             {groups &&
               groups[0].node.frontmatter.groupes &&
               groups[0].node.frontmatter.groupes.map((group, index) => (
-                <div className="column is-3" key={index}>
-                  <h2>
-                    {group.commune} ({group.departement})
-                  </h2>
-                  <div className="is-flex columns is-centered">
-                    {group.email ? (
-                      <Obfuscate className="follow" email={group.email} obfuscateChildren={false}>
-                        <svg className="email" title="E-mail" aria-label="E-mail">
-                          <use xlinkHref="#icon-email" />
-                        </svg>
-                      </Obfuscate>
-                    ) : null}
-                    <SocialLink link={group.facebook} network="facebook" title="Facebook" />
-                    <SocialLink link={group.twitter} network="twitter" title="Twitter" />
-                    <SocialLink link={group.instagram} network="instagram" title="Instragram" />
-                    <SocialLink link={group.youtube} network="youtube" title="Youtube" />
-                  </div>
-                  {group.newsletter ? (
-                    <div className="newsletter">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={group.newsletter}
-                      >
-                        S'abonner à la newsletter
-                      </a>
-                    </div>
-                  ) : null}
-                  <div>
-                    <span className="has-text-weight-bold">
-                      {`Correspondant${group.genre === "Féminin" ? 'e' : ''} :`}
-                    </span>{" "}
-                    {group.correspondant}
-                  </div>
-                </div>
+                <GroupeTemplate group={group} index={index} />
               ))}
           </div>
         </div>
