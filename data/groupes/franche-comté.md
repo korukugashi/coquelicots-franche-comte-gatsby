@@ -51,5 +51,11 @@ groupes:
     departement: 70
     email: odilon.semprey@ac-besancon.fr
     genre: Féminin
+  - commune: Champlitte
+    correspondant: Aymeric Borie
+    departement: 70
+    email: aymeric.borie@gmail.com
+    facebook: 'https://www.facebook.com/coquelicotschamplitte'
+    genre: Masculin
 ---
 
