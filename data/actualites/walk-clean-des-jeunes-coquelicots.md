@@ -1,7 +1,7 @@
 ---
 templateKey: actualites
 date: 2019-06-12T19:52:19.829Z
-title: Walk clean des jeunes coquelicots
+title: Clean Walk des jeunes coquelicots
 photos:
   - description: Walk clean juin 2019 Besançon
     image: /assets/190609_095631_13.jpeg
