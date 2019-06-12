@@ -11,13 +11,25 @@ class Affiches extends React.Component {
     if (!affiches.length) {
       return null
     }
-    
+
     affiches.reverse()
     const last = affiches.pop()
 
     return (
       <section className="section">
         <div className="container">
+          <div style={{ marginBottom: "3em" }}>
+            <p className="has-text-centered" style={{ fontSize: '1.1em' }}>
+              Le premier vendredi de chaque mois nous nous retrouvons devant les
+              mairies de chaque ville, avec musique, apéro, vitalité, belles
+              idées, et projets d’actions pour faire vivre l’Appel des
+              coquelicots.
+            </p>
+            <p className="moon has-text-centered has-text-weight-bold" style={{ fontSize: "1.6em", color: "#b50800" }}>
+              Chaque mois soyons plus nombreux avec l'objectif de réunir : 5
+              millions de personnes en 2020 !
+            </p>
+          </div>
           <div className="columns is-centered is-vcentered">
             {affiches.length ? (
               <div className="column is-hidden-touch">
