@@ -34,6 +34,6 @@ commercants:
   - link: 'https://www.natureetdecouvertes.com/magasins/doubs/besancon'
     title: Nature et découvertes
   - link: ''
-    title: 'Chez Nathalie, épicerie de quartier rue Gabriel Plançon Besançon.'
+    title: 'Chez Nathalie, rue Gabriel Plançon Besançon'
 ---
 
