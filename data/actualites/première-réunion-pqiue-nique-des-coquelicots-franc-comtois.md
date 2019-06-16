@@ -1,7 +1,7 @@
 ---
 templateKey: actualites
 date: 2019-06-16T15:18:47.903Z
-title: Première Réunion pqiue nique des coquelicots franc-comtois
+title: Première Réunion pique nique des coquelicots franc-comtois
 photos:
   - description: Réunion à Osselle 15 juin
     image: /assets/osselle2.jpg
