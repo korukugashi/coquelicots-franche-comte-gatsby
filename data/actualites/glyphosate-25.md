@@ -1,7 +1,7 @@
 ---
 templateKey: actualites
 date: 2019-06-07T09:38:51.599Z
-title: Campagne de presse Glyphosate 25
+title: Conférence de presse Glyphosate 25
 photos:
   - description: 'Les intervenants de la conférence de presse, de gauche à droite'
     image: /assets/190609_095631_17.jpeg
