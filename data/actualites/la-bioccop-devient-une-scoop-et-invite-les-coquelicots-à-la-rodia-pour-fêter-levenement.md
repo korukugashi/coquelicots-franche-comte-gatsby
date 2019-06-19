@@ -2,13 +2,13 @@
 templateKey: actualites
 date: 2019-06-19T09:14:15.664Z
 title: >-
-  LA bioccop devient une scoop et invite les coquelicots à la rodia pour fêter
+  LA bioccop devient une scop et invite les coquelicots à la rodia pour fêter
   l'evenement
 photos:
   - description: Les coquelicots à la soirée de la biocoop Rodia juin 2019
     image: /assets/soirée-biocoop-scoop-juin-2019.jpg
 ---
-Hier soir les associés de la scoop bioccop de Besançon ont réuni partenaires, consommateurs, producteurs et artistes pour fêter ensemble leur entrée dans le monde de l'économie sociale et solidaire. 
+Hier soir les associés de la scop bioccop de Besançon ont réuni partenaires, consommateurs, producteurs et artistes pour fêter ensemble leur entrée dans le monde de l'économie sociale et solidaire. 
 
 Et avant le délicieux buffet de la bioccop "garanti sans pesticide", une très chouette   pièce de théâtre : "La coopérative" par  la compagnie  Du pas de l'oiseau (https://lepasdeloiseau.wordpress.com/) 
 
