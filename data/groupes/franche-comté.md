@@ -63,5 +63,10 @@ groupes:
     email: gensdebelfort@gmail.com
     facebook: 'https://www.facebook.com/groups/coquelicots.belfort/'
     genre: Féminin
+  - commune: Nans Sous Sainte Anne
+    correspondant: Alain Solviche
+    departement: 25
+    email: echel.assoc@free.fr
+    genre: Masculin
 ---
 
