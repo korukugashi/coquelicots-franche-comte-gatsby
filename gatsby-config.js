@@ -4,9 +4,15 @@ module.exports = {
     description: `Appel pour l'interdiction de tous les pesticides de synthèse. Retrouvez tous les collectifs près de chez vous en Franche-Comté.`,
     author: `@coquelicots_`,
     lang: `fr`,
-    siteUrl: `https://www.coquelicots-franche-comte.org`
+    siteUrl: `https://www.coquelicots-franche-comte.org`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-polyfill-io`,
+      options: {
+        features: [`es2015`, `es5`, `es6`, `es2017`],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,7 +33,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          'gatsby-remark-relative-images',,
+          "gatsby-remark-relative-images",
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -38,9 +44,9 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-copy-linked-files',
+            resolve: "gatsby-remark-copy-linked-files",
             options: {
-              destinationDir: 'static',
+              destinationDir: "static",
             },
           },
         ],
@@ -68,39 +74,56 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-matomo',
+      resolve: "gatsby-plugin-matomo",
       options: {
-        siteId: '1',
-        matomoUrl: 'https://koruku.alwaysdata.net/matomo',
-        siteUrl: 'https://www.coquelicots-franche-comte.org',
+        siteId: "1",
+        matomoUrl: "https://koruku.alwaysdata.net/matomo",
+        siteUrl: "https://www.coquelicots-franche-comte.org",
         disableCookies: true,
         requireConsent: false,
-      }
+      },
     },
     `gatsby-plugin-remove-serviceworker`,
     {
-      resolve: 'gatsby-plugin-svgr',
+      resolve: "gatsby-plugin-svgr",
       options: {
-        prettier: true,         // use prettier to format JS code output (default)
-        svgo: false,             // use svgo to optimize SVGs (default)
+        prettier: true, // use prettier to format JS code output (default)
+        svgo: false, // use svgo to optimize SVGs (default)
       },
     },
     `gatsby-plugin-sitemap`,
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     {
-      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
         // develop: true, // Activates purging in npm run develop
         printRejected: true,
-        whitelist: ['has-text-weight-bold', 'slick-slider', 'slider', 'variable-width', 'center',
-          'slick-track', 'slick-list', 'slick-slide', 'slick-loading', 'slick-initialized',
-          'dragging', 'slick-vertical', 'slick-arrow', 'slick-hidden', 'slick-prev', 'slick-next',
-          'slick-dotted', 'slick-dots', 'slick-active'],
+        whitelist: [
+          "has-text-weight-bold",
+          "slick-slider",
+          "slider",
+          "variable-width",
+          "center",
+          "slick-track",
+          "slick-list",
+          "slick-slide",
+          "slick-loading",
+          "slick-initialized",
+          "dragging",
+          "slick-vertical",
+          "slick-arrow",
+          "slick-hidden",
+          "slick-prev",
+          "slick-next",
+          "slick-dotted",
+          "slick-dots",
+          "slick-active",
+        ],
       },
     }, // must be after other CSS plugins
   ],
