@@ -102,7 +102,7 @@ const Header = class extends React.Component {
                 <MenuItem sectionName="contacts" sectionLabel="Les groupes locaux" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
                 <MenuItem sectionName="actualite" sectionLabel="Actualités" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
                 <MenuItem sectionName="nos-soutiens" sectionLabel="Nos soutiens" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
-                <MenuItem sectionName="l-appel" sectionLabel="L'appel des coquelicots" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
+                <MenuItem sectionName="l-appel" sectionLabel="L'appel national des coquelicots" isIndex={this.props.isIndex} toggleHamburger={this.toggleHamburger} />
               </div>
             </div>
           </div>

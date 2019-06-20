@@ -57,5 +57,16 @@ groupes:
     email: aymeric.borie@gmail.com
     facebook: 'https://www.facebook.com/coquelicotschamplitte'
     genre: Masculin
+  - commune: BELFORT
+    correspondant: Emmanuelle Schuster
+    departement: 90
+    email: gensdebelfort@gmail.com
+    facebook: 'https://www.facebook.com/groups/coquelicots.belfort/'
+    genre: Féminin
+  - commune: Nans Sous Sainte Anne
+    correspondant: Alain Solviche
+    departement: 25
+    email: echel.assoc@free.fr
+    genre: Masculin
 ---
 
