@@ -71,3 +71,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.onCreateWebpackConfig = ({ stage, plugins, actions }) => {
+  switch (stage) {
+    case "build-javascript":
+      actions.setWebpackConfig({
+        optimization: {
+          minimizer: [
+            plugins.minifyJs({
+              terserOptions: {
+                ecma: 5, // Ensures minified js is IE11 compatible
+              },
+            }),
+            plugins.minifyCss(),
+          ],
+        },
+      })
+  }
+}
