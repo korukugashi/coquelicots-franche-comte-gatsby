@@ -118,7 +118,7 @@ export default class NewsList extends React.Component {
           </div>
         </section>
         <script type="application/ld+json">
-          {JSON.stringify([
+          {`[
             {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
@@ -134,7 +134,7 @@ export default class NewsList extends React.Component {
                 "item": "https://www.coquelicots-franche-comte.org/actualites/"
               }]
             }
-          ])}
+          ]`}
         </script>
       </Layout>
     )
