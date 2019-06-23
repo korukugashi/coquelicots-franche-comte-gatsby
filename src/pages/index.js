@@ -80,6 +80,47 @@ const IndexPage = () => (
         </div>
       </section>
     </Section>
+    <script type="application/ld+json">
+      {JSON.stringify([
+        {
+          "@context": "https://schema.org",
+          "@id": "https://www.coquelicots-franche-comte.org/",
+          "@type": "NGO",
+          "name": "Coquelicots Franche-Comté",
+          "legalName": "Nous voulons des coquelicots Franche-Comté",
+          "url": "https://www.fne2590.org",
+          "logo": "https://www.coquelicots-franche-comte.org/logo-les-coquelicots.svg",
+          "description":
+            "Collectif pour l'interdiction des pesticides en Franche-Comté. Organisé par les coquelicots de Besançon.",
+          "address": [
+            {
+              "@type": "PostalAddress",
+              "addressLocality": "Besançon",
+              "postalCode": "25000"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/groups/coquelicots.besancon/",
+            "https://www.instagram.com/coquelicots_besancon/?hl=fr"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Coquelicots Franche-Comté",
+            "item": "https://www.coquelicots-franche-comte.org/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Évènements",
+            "item": "https://www.coquelicots-franche-comte.org/#evenements"
+          }]
+        }
+      ])}
+    </script>
   </Layout>
 )
 

@@ -25,6 +25,25 @@ const MentionsLegalesPage = () => (
         <p>Les données des responsables de groupes ainsi que les photos des évènements sont collectées par le collectif "Nous voulons des coquelicots Besançon". Contacter <Obfuscate email="coquelicots.besancon@gmail.com">coquelicots.besancon@gmail.com</Obfuscate> pour toute demande de consultation, modification ou suppression de vos données personnelles.</p>
       </div>
     </section>
+    <script type="application/ld+json">
+      {JSON.stringify([
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Coquelicots Franche-Comté",
+            "item": "https://www.coquelicots-franche-comte.org/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Mentions légales",
+            "item": "https://www.coquelicots-franche-comte.org/mentions-legales/"
+          }]
+        }
+      ])}
+    </script>
   </Layout>
 )
 

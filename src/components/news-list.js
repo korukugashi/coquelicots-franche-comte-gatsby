@@ -117,6 +117,25 @@ export default class NewsList extends React.Component {
             </nav>
           </div>
         </section>
+        <script type="application/ld+json">
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Coquelicots Franche-Comté",
+                "item": "https://www.coquelicots-franche-comte.org/"
+              },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Actualités",
+                "item": "https://www.coquelicots-franche-comte.org/actualites/"
+              }]
+            }
+          ])}
+        </script>
       </Layout>
     )
   }
