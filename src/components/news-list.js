@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "./layout"
@@ -30,33 +30,91 @@ const Image = ({ photo }) => (
 export default class NewsList extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
+    const { currentPage, numPages } = this.props.pageContext
+    const isFirst = currentPage === 1
+    const isLast = currentPage === numPages
+    const prevPage = `/actualites/${
+      currentPage - 1 === 1 ? "" : `${(currentPage - 1).toString()}/`
+    }`
+    const nextPage = `/actualites/${(currentPage + 1).toString()}/`
+
     return (
       <Layout>
         <SEO title="Les actualités des coquelicots en Franche-Comté" />
-        <section className="section" id="actualite">
+        <section
+          className="section"
+          id="actualite"
+          style={{ background: "#666" }}
+        >
           <div className="container">
-            <h1>Les actualités des coquelicots en Franche-Comté</h1>
-            <div className="columns is-multiline">
-              {posts.map(({ node }, index) => {
-                return (
+            <h1>
+              <span style={{ color: "#fff", background: "#222" }}>
+                Les actualités des coquelicots en Franche-Comté
+              </span>
+            </h1>
+            <div className="columns is-multiline is-centered">
+              {posts.map(({ node }, index) =>
+                (
                   <article key={index} className="column is-half">
-                    <h2>{node.frontmatter.title}</h2>
-                    <time dateTime="2019-05-19">{node.frontmatter.date}</time>
-                    <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                    {node.frontmatter.photos ? (
-                      <div
-                        className="columns is-multiline is-centered"
-                        style={{ marginTop: "0.5rem" }}
-                      >
-                        {node.frontmatter.photos.map((photo, index) => (
-                          <Image photo={photo} key={index} />
-                        ))}
-                      </div>
-                    ) : null}
+                    <div className="box">
+                      <h2>{node.frontmatter.title}</h2>
+                      <time dateTime="2019-05-19">{node.frontmatter.date}</time>
+                      <div dangerouslySetInnerHTML={{ __html: node.html }} />
+                      {node.frontmatter.photos ? (
+                        <div
+                          className="columns is-multiline is-centered"
+                          style={{ marginTop: "0.5rem" }}
+                        >
+                          {node.frontmatter.photos.map((photo, index) => (
+                            <Image photo={photo} key={index} />
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
                   </article>
                 )
-              })}
+              )}
             </div>
+            <nav
+              className="pagination"
+              role="navigation"
+              aria-label="pagination"
+              style={{ marginTop: "2rem" }}
+            >
+              {(!isFirst && (
+                <Link to={prevPage} rel="prev" className="pagination-previous">
+                  ← Page précédante
+                </Link>
+              )) || (
+                <span className="pagination-previous" disabled>
+                  ← Page précédante
+                </span>
+              )}
+              <ul className="pagination-list">
+                {Array.from({ length: numPages }, (_, i) => (
+                  <li>
+                    <Link
+                      key={`pagination-number${i + 1}`}
+                      to={`/actualites/${i === 0 ? "" : `${i + 1}/`}`}
+                      className={`pagination-link${
+                        i + 1 === currentPage ? " is-current" : ""
+                      }`}
+                    >
+                      {i + 1}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              {(!isLast && (
+                <Link to={nextPage} rel="next" className="pagination-next">
+                  Page suivante →
+                </Link>
+              )) || (
+                <span className="pagination-next" disabled>
+                  Page suivante →
+                </span>
+              )}
+            </nav>
           </div>
         </section>
       </Layout>

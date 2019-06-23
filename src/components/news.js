@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import Content, { HTMLContent } from "./Content"
 
@@ -57,7 +57,7 @@ export const ActualiteTemplate = ({
 class News extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: news } = data.allMarkdownRemark
+    const { edges: news, totalCount } = data.allMarkdownRemark
 
     return (
       <section className="section">
@@ -66,19 +66,46 @@ class News extends React.Component {
             <span>Actualités</span>
           </h1>
           <div className="columns is-multiline is-centered">
-            {news &&
-              news.map(({ node: post }, index) => (
-                <article className="column is-half" key={index}>
-                  <ActualiteTemplate
-                    title={post.frontmatter.title}
-                    date={post.frontmatter.date}
-                    content={post.html}
-                    contentComponent={HTMLContent}
-                    photos={post.frontmatter.photos}
-                  />
-                </article>
-              ))}
+            <div className="column is-half">
+              {news &&
+                news.map(({ node: post }, index) =>
+                  index % 2 === 0 ? (
+                    <article key={index} style={{ marginTop: '2rem' }}>
+                      <ActualiteTemplate
+                        title={post.frontmatter.title}
+                        date={post.frontmatter.date}
+                        content={post.html}
+                        contentComponent={HTMLContent}
+                        photos={post.frontmatter.photos}
+                      />
+                    </article>
+                  ) : null
+                )}
+            </div>
+            <div className="column is-half">
+              {news &&
+                news.map(({ node: post }, index) =>
+                  index % 2 === 1 ? (
+                    <article key={index} style={{ marginTop: '2rem' }}>
+                      <ActualiteTemplate
+                        title={post.frontmatter.title}
+                        date={post.frontmatter.date}
+                        content={post.html}
+                        contentComponent={HTMLContent}
+                        photos={post.frontmatter.photos}
+                      />
+                    </article>
+                  ) : null
+                )}
+            </div>
           </div>
+          {totalCount > 4 ? (
+            <div className="has-text-centered" style={{ marginTop: "2rem" }}>
+              <Link to="/actualites/" className="button" style={{}}>
+                Voir toutes les actualités
+              </Link>
+            </div>
+          ) : null}
         </div>
       </section>
     )
