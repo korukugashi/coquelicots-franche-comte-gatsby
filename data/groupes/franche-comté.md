@@ -68,5 +68,11 @@ groupes:
     departement: 25
     email: echel.assoc@free.fr
     genre: Masculin
+  - commune: Dole
+    correspondant: Véronique Besançon
+    departement: 39
+    email: besanconveronique@gmail.com
+    facebook: 'https://www.facebook.com/NousVoulonsdesCoquelicotsDoleJura/'
+    genre: Féminin
 ---
 
