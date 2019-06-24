@@ -26,6 +26,8 @@ mairies:
     title: Commune d'Osselle-Routelle
   - link: 'http://www.montfaucon25.fr/'
     title: Commune de Montfaucon
+  - link: 'http://www.saint-loup.eu/'
+    title: Saint Loup Sur Semouse
 commercants:
   - link: 'https://www.biocoop.fr/'
     title: Biocoop
