@@ -30,7 +30,7 @@ class Commercants extends React.Component {
     return (
       <section className="section" id="commercants">
         <div className="container">
-          <h2>Commerçants</h2>
+          <h2>Relais</h2>
           <ul className="columns is-multiline has-text-centered">
             {edges &&
               edges[0].node.frontmatter.commercants &&

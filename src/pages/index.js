@@ -81,7 +81,7 @@ const IndexPage = () => (
       </section>
     </Section>
     <script type="application/ld+json">
-      {`[
+      {JSON.stringify([
         {
           "@context": "https://schema.org",
           "@id": "https://www.coquelicots-franche-comte.org/",
@@ -119,7 +119,7 @@ const IndexPage = () => (
             "item": "https://www.coquelicots-franche-comte.org/#evenements"
           }]
         }
-      ]`}
+      ])}
     </script>
   </Layout>
 )

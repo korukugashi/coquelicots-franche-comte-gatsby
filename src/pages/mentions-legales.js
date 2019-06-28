@@ -26,7 +26,7 @@ const MentionsLegalesPage = () => (
       </div>
     </section>
     <script type="application/ld+json">
-      {`[
+      {JSON.stringify([
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
@@ -42,7 +42,7 @@ const MentionsLegalesPage = () => (
             "item": "https://www.coquelicots-franche-comte.org/mentions-legales/"
           }]
         }
-      ]`}
+      ])}
     </script>
   </Layout>
 )
