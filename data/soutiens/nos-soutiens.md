@@ -4,9 +4,9 @@ associations:
   - link: 'https://www.fne2590.org'
     logo: /assets/logo-fne2590.png
     title: France Nature Environnement 25-90
-  - link: ''
+  - link: 'https://www.facebook.com/hophophopbesancon/'
     logo: /assets/hophophop.jpg
-    title: HopHopHop
+    title: Association HopHopHop
   - link: 'https://www.humanimo.fr/'
     logo: /assets/humanimo.png
     title: Humanimo
@@ -32,9 +32,9 @@ commercants:
   - link: 'https://www.biocoop.fr/'
     title: Biocoop
   - link: ''
-    title: Gloria
+    title: Resataurant  Chez Gloria
   - link: 'https://www.natureetdecouvertes.com/magasins/doubs/besancon'
     title: Nature et découvertes
-  - title: 'Chez Nathalie, rue Gabriel Plançon à Besançon'
+  - title: '"Chez Nathalie" Épicerie de quartier'
 ---
 
