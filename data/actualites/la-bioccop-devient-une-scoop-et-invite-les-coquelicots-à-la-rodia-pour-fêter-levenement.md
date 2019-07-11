@@ -10,7 +10,7 @@ photos:
 ---
 Hier soir les associés de la Scop Biocoop de Besançon ont réuni partenaires, consommateurs, producteurs et artistes pour fêter ensemble leur entrée dans le monde de l'**économie sociale et solidaire**. 
 
-Et avant le délicieux buffet de la Biocoop "garanti sans pesticide", une très chouette pièce de théâtre : "La coopérative" par  la compagnie  Du pas de l'oiseau (<https://lepasdeloiseau.wordpress.com/>) 
+Et avant le délicieux buffet de la Biocoop "garanti sans pesticide", une très chouette pièce de théâtre : "La coopérative" par  la compagnie [Du pas de l'oiseau ](https://lepasdeloiseau.wordpress.com/)
 
 Les coquelicots de Besançon étaient de la fête ! 
 
