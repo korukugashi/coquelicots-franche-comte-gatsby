@@ -7,3 +7,5 @@ photos:
     image: /assets/20190428_162738.jpg
 ---
 Opération coup de poing.
+
+Inscrivez-vous ici
