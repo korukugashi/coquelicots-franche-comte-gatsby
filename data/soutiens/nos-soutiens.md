@@ -32,7 +32,7 @@ commercants:
   - link: 'https://www.biocoop.fr/'
     title: Biocoop
   - link: ''
-    title: Resataurant  Chez Gloria
+    title: Restaurant  Chez Gloria
   - link: 'https://www.natureetdecouvertes.com/magasins/doubs/besancon'
     title: Nature et découvertes
   - title: '"Chez Nathalie" Épicerie de quartier'
