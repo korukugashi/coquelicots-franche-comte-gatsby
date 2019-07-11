@@ -2,7 +2,9 @@
 templateKey: actualites
 date: 2019-07-01T11:47:00.739Z
 title: Soutenons le maire de Langouët
-photos: []
+photos:
+  - description: langouet
+    image: /assets/langouet.png
 ---
 Si vous êtes là vous avez certainement suivis l'actualité autour de la position du maire de Langouët ce village breton qui semble être un havre pour l'écologie ! 
 
