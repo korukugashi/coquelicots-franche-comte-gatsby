@@ -36,6 +36,6 @@ commercants:
   - link: 'https://www.natureetdecouvertes.com/magasins/doubs/besancon'
     title: Nature et découvertes
   - title: '"Chez Nathalie" Épicerie de quartier'
-  - title: 'SPIRALE Bijoux, vêtements artisanale, rue du lycée, Besançon'
+  - title: 'SPIRALE Bijoux, vêtements artisanat, rue du lycée, Besançon'
 ---
 
