@@ -32,7 +32,7 @@ export const ActualiteTemplate = ({
   content,
   photos,
   contentComponent,
-  liens
+  liens,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -52,9 +52,20 @@ export const ActualiteTemplate = ({
         </div>
       ) : null}
       {liens ? (
-        <div>
+        <div className="has-text-centered">
           {liens.map((lien, index) => (
-            <span key={index}>{index > 0 ? ' - ' : null}<a href={lien.url && lien.url.indexOf('http') >= 0 ? lien.url : `https://${lien.url}`}>{lien.description || lien.url}</a></span>
+            <span key={index}>
+              {index > 0 ? " - " : null}
+              <a
+                href={
+                  lien.url && lien.url.indexOf("http") >= 0
+                    ? lien.url
+                    : `https://${lien.url}`
+                }
+              >
+                {lien.description || lien.url}
+              </a>
+            </span>
           ))}
         </div>
       ) : null}
@@ -78,7 +89,7 @@ class News extends React.Component {
               {news &&
                 news.map(({ node: post }, index) =>
                   index % 2 === 0 ? (
-                    <article key={index} style={{ marginTop: '2rem' }}>
+                    <article key={index} style={{ marginTop: "2rem" }}>
                       <ActualiteTemplate
                         title={post.frontmatter.title}
                         date={post.frontmatter.date}
@@ -95,7 +106,7 @@ class News extends React.Component {
               {news &&
                 news.map(({ node: post }, index) =>
                   index % 2 === 1 ? (
-                    <article key={index} style={{ marginTop: '2rem' }}>
+                    <article key={index} style={{ marginTop: "2rem" }}>
                       <ActualiteTemplate
                         title={post.frontmatter.title}
                         date={post.frontmatter.date}
@@ -159,7 +170,10 @@ export default () => (
                   }
                   description
                 }
-                
+                liens {
+                  url
+                  description
+                }
               }
             }
           }

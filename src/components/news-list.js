@@ -53,27 +53,43 @@ export default class NewsList extends React.Component {
               </span>
             </h1>
             <div className="columns is-multiline is-centered">
-              {posts.map(({ node }, index) =>
-                (
-                  <article key={index} className="column is-half">
-                    <div className="box">
-                      <h2>{node.frontmatter.title}</h2>
-                      <time dateTime="2019-05-19">{node.frontmatter.date}</time>
-                      <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                      {node.frontmatter.photos ? (
-                        <div
-                          className="columns is-multiline is-centered"
-                          style={{ marginTop: "0.5rem" }}
-                        >
-                          {node.frontmatter.photos.map((photo, index) => (
-                            <Image photo={photo} key={index} />
-                          ))}
-                        </div>
-                      ) : null}
-                    </div>
-                  </article>
-                )
-              )}
+              {posts.map(({ node }, index) => (
+                <article key={index} className="column is-half">
+                  <div className="box">
+                    <h2>{node.frontmatter.title}</h2>
+                    <time dateTime="2019-05-19">{node.frontmatter.date}</time>
+                    <div dangerouslySetInnerHTML={{ __html: node.html }} />
+                    {node.frontmatter.photos ? (
+                      <div
+                        className="columns is-multiline is-centered"
+                        style={{ marginTop: "0.5rem" }}
+                      >
+                        {node.frontmatter.photos.map((photo, index) => (
+                          <Image photo={photo} key={index} />
+                        ))}
+                      </div>
+                    ) : null}
+                    {node.frontmatter.liens ? (
+                      <div className="has-text-centered">
+                        {node.frontmatter.liens.map((lien, index) => (
+                          <span key={index}>
+                            {index > 0 ? " - " : null}
+                            <a
+                              href={
+                                lien.url && lien.url.indexOf("http") >= 0
+                                  ? lien.url
+                                  : `https://${lien.url}`
+                              }
+                            >
+                              {lien.description || lien.url}
+                            </a>
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+                </article>
+              ))}
             </div>
             <nav
               className="pagination"
@@ -122,18 +138,21 @@ export default class NewsList extends React.Component {
             {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
-              "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Coquelicots Franche-Comté",
-                "item": "https://www.coquelicots-franche-comte.org/"
-              },{
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Actualités",
-                "item": "https://www.coquelicots-franche-comte.org/actualites/"
-              }]
-            }
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Coquelicots Franche-Comté",
+                  item: "https://www.coquelicots-franche-comte.org/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Actualités",
+                  item: "https://www.coquelicots-franche-comte.org/actualites/",
+                },
+              ],
+            },
           ])}
         </script>
       </Layout>
@@ -166,6 +185,10 @@ export const newsListQuery = graphql`
                   }
                 }
               }
+              description
+            }
+            liens {
+              url
               description
             }
           }
