@@ -5,6 +5,7 @@ title: Conférence de presse Glyphosate 25
 photos:
   - description: 'Les intervenants de la conférence de presse, de gauche à droite'
     image: /assets/190609_095631_17.jpeg
+liens: []
 ---
 Conférence de presse organisée par l'association : **Campagne Glyphosate 25**
 

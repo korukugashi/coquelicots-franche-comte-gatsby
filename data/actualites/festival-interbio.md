@@ -5,6 +5,7 @@ title: Festival interbio
 photos:
   - description: stand interbio
     image: /assets/20190428_162738.jpg
+liens: []
 ---
 Malgré la météo pluvieuse les coquelicots de Besançon ont tenu leur premier stand dans la joie et la bonne humeur.
 

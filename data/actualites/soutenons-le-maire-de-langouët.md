@@ -5,6 +5,7 @@ title: Soutenons le maire de Langouët
 photos:
   - description: langouet
     image: /assets/langouet.png
+liens: []
 ---
 Si vous êtes là vous avez certainement suivis l'actualité autour de la position du maire de Langouët ce village breton qui semble être un havre pour l'écologie ! 
 

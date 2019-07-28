@@ -7,6 +7,7 @@ title: >-
 photos:
   - description: Les coquelicots à la soirée de la biocoop Rodia juin 2019
     image: /assets/soirée-biocoop-scoop-juin-2019.jpg
+liens: []
 ---
 Hier soir les associés de la Scop Biocoop de Besançon ont réuni partenaires, consommateurs, producteurs et artistes pour fêter ensemble leur entrée dans le monde de l'**économie sociale et solidaire**. 
 
