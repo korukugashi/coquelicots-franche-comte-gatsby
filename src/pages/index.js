@@ -26,7 +26,7 @@ const IndexPage = () => (
           "@type": "NGO",
           name: "Coquelicots Franche-Comté",
           legalName: "Nous voulons des coquelicots Franche-Comté",
-          url: "https://www.fne2590.org",
+          url: "https://www.coquelicots-franche-comte.org",
           logo:
             "https://www.coquelicots-franche-comte.org/logo-les-coquelicots.svg",
           description:
@@ -52,12 +52,6 @@ const IndexPage = () => (
               position: 1,
               name: "Coquelicots Franche-Comté",
               item: "https://www.coquelicots-franche-comte.org/",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Évènements",
-              item: "https://www.coquelicots-franche-comte.org/#evenements",
             },
           ],
         },
