@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Futura from "../fonts/FuturaStd-Medium.woff2"
 import Moon from "../fonts/Moon-Flower.woff2"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, jsonLd }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -35,7 +35,7 @@ function SEO({ description, lang, meta, title }) {
     <Helmet
       htmlAttributes={{
         lang: site.siteMetadata.lang,
-        class: 'has-navbar-fixed-top',
+        class: "has-navbar-fixed-top",
       }}
       title={title}
       titleTemplate={`${site.siteMetadata.title} | %s`}
@@ -74,16 +74,23 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link rel="preload"
+      <link
+        rel="preload"
         as="font"
         href={Futura}
         type="font/woff2"
-        crossOrigin="anonymous" />
-      <link rel="preload"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
         as="font"
         href={Moon}
         type="font/woff2"
-        crossOrigin="anonymous" />
+        crossOrigin="anonymous"
+      />
+      {jsonLd ? (
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      ) : null}
     </Helmet>
   )
 }
@@ -92,10 +99,12 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
+  jsonLd: null,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
+  jsonLd: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
