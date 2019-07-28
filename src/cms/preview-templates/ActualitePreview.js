@@ -9,8 +9,12 @@ const ActualitePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => (
       date={entry.getIn(["data", "date"]).toLocaleDateString()}
       content={widgetFor("body")}
       photos={widgetsFor("photos").map(photo => ({
-        image: getAsset(photo.getIn(['data', 'image'])),
-        description: photo.getIn(['data', 'description'])
+        image: getAsset(photo.getIn(["data", "image"])),
+        description: photo.getIn(["data", "description"]),
+      }))}
+      liens={widgetsFor("liens").map(lien => ({
+        url: lien.getIn(["data", "url"]),
+        description: lien.getIn(["data", "description"]),
       }))}
     />
   </div>

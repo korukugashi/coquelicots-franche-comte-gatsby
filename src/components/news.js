@@ -32,6 +32,7 @@ export const ActualiteTemplate = ({
   content,
   photos,
   contentComponent,
+  liens
 }) => {
   const PostContent = contentComponent || Content
 
@@ -47,6 +48,13 @@ export const ActualiteTemplate = ({
         >
           {photos.map((photo, index) => (
             <Image photo={photo} key={index} />
+          ))}
+        </div>
+      ) : null}
+      {liens ? (
+        <div>
+          {liens.map((lien, index) => (
+            <span key={index}>{index > 0 ? ' - ' : null}<a href={lien.url && lien.url.indexOf('http') >= 0 ? lien.url : `https://${lien.url}`}>{lien.description || lien.url}</a></span>
           ))}
         </div>
       ) : null}
@@ -77,6 +85,7 @@ class News extends React.Component {
                         content={post.html}
                         contentComponent={HTMLContent}
                         photos={post.frontmatter.photos}
+                        liens={post.frontmatter.liens}
                       />
                     </article>
                   ) : null
@@ -93,6 +102,7 @@ class News extends React.Component {
                         content={post.html}
                         contentComponent={HTMLContent}
                         photos={post.frontmatter.photos}
+                        liens={post.frontmatter.liens}
                       />
                     </article>
                   ) : null
@@ -149,6 +159,7 @@ export default () => (
                   }
                   description
                 }
+                
               }
             }
           }

@@ -55,6 +55,13 @@ collections:
         fields:
           - { name: image, label: Image, widget: image}
           - { name: description, label: Description de l'image }
+      - name: liens
+        label: Liens
+        widget: list
+        required: false
+        fields:
+          - { name: url, label: URL, widget: string }
+          - { name: description, label: Texte affiché, widget: string }
   - name: soutiens
     label: Soutiens
     folder: data/soutiens
