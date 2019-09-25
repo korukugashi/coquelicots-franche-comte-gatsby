@@ -80,5 +80,10 @@ groupes:
     email: shona.taine@gmail.com
     facebook: 'https://www.facebook.com/groups/350253822394120/'
     genre: Féminin
+  - commune: TRESILLEY
+    correspondant: Pierre BRONGNIART
+    departement: 70
+    email: jaubartim@hotmail.fr
+    genre: Masculin
 ---
 
