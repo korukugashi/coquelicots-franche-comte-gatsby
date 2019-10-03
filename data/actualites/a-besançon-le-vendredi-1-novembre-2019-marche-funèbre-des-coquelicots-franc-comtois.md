@@ -10,6 +10,7 @@ liens: []
 C'est confirmé le treizième rassemblement des coquelicots en ce triste jour de Toussaint sera régional et une dizaine de groupes locaux viendra se joindre aux coquelicots de Besançon pour participer à une marche funèbre  et une cérémonie symbolique devant la préfecture pour célébrer les victimes  d'un modèle agricole mortifère sous la coupe du monde de l'agrochimie.
 
 Mélisey, Trésilley, Trépot, Foucherans, Tarcenay, Ornans, Merey, Dole, Valdahon et peut-être d'autres en attente de confirmation feront la route pour nous rejoindre !
+Et Belfort qui vient de nous confirmer sa venue !
 
 Si vous aussi vous souhaitez participer, écrivez à coquelicots.besancon@gmail.com
 
