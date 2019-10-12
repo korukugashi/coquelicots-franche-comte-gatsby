@@ -11,5 +11,6 @@ Fabrice Nicolino,  président de l'Appel des coquelicots,  en direct de Bretagne
 
                  RDV vendredi 18 octobre à 20 h
 
-        A L'arsenal dans les locaux HOP HOP HOP Salle du grand labo
+        A L'arsenal dans les locaux HOP HOP HOP 
+                  Salle du grand labo
 
