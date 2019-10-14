@@ -13,7 +13,7 @@ photos:
     image: /assets/72248174_2195612700544443_3707017935676506112_n.jpg
 liens: []
 ---
-A Besançon les coquelicots préparent activement la marche funèbre du 1 novembre prochain !
+A Besançon les coquelicots préparent activement la marche funèbre du vendredi 1 novembre prochain !
 Et vous, vos gerbes de fleurs elles se préparent ?
 Vous êtes nombreux à avoir répondu favorablement à notre invitation : Pelousey, Valdahon, Melisey, Belfort, Saint Claude, Dole, Trésilley, Marnay, Foucherans, Tarcenay, Ornans, Merey sous Montrond, (Saint Loup à confirmer).
-N'oubliez d'apporter de quoi partager un petit casse croûte avant de repartir, nous avons réserver une salle pour se retrouver après la marche !
+N'oubliez pas d'apporter de quoi partager un petit casse croûte avant de repartir, nous avons réservé une salle pour se retrouver après la marche !
