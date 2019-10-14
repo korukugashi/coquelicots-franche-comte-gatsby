@@ -85,5 +85,10 @@ groupes:
     departement: 70
     email: jaubartim@hotmail.fr
     genre: Masculin
+  - commune: Saint Claude
+    correspondant: Rémi
+    departement: 37
+    email: coquelicots_st-claude@riseup.net
+    genre: Masculin
 ---
 
