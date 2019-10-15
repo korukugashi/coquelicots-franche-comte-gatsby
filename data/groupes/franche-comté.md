@@ -87,7 +87,7 @@ groupes:
     genre: Masculin
   - commune: Saint Claude
     correspondant: Rémi
-    departement: 37
+    departement: 39
     email: coquelicots_st-claude@riseup.net
     genre: Masculin
 ---
