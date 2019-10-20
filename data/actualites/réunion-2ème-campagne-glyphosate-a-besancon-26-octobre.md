@@ -1,25 +1,13 @@
 ---
 templateKey: actualites
 date: 2019-10-12T11:40:11.883Z
-title: Réunion 2ème campagne GLYPHOSATE A BESANCON  26 octobre
+title: Annulation de la troisième campagne de dosage de GLYPHOSATE dans les urines
 photos:
-  - description: Glypho campagne 1
-    image: /assets/glypho.png
+  - description: Campagne glyphosate 25 les premiers résultats !
+    image: /assets/62403763_2125052240925741_5577726314799955968_n.jpg
 liens: []
 ---
-Présentation de la campagne glyphosate (historique, développement au plan national, situation locale, analyses d'urine, dépôt de plaintes,...)
-
-Informations pratiques sur la prochaine séance de prélèvement du 16 novembre
-
-Réponses à vos questions
-
-Si vous ne l'avez pas encore fait, vous pourrez aussi profiter de cette rencontre pour vous inscrire à la séance de prélèvement du 16 novembre. Dans ce cas, n'oubliez pas la copie  de votre carte d'identité (recto et verso sur la même feuille) et votre chéquier.  
-
-Nous vous invitons à participer nombreux à cette réunion d’information.
-
-               Le 26 Octobre de 10 heures à 12 heures
-
-                   Centre Pierre Mendes France
-
-                   3 rue Beauregard à Besançon
+C'est la rançon du succès ! Il y a tellement de plaintes  déposées et de dosage en cours au niveau national que la campagne doit être momentanément suspendue pour laisser aux avocats le temps de monter les dossiers et aux tribunaux de les traiter. L'association campagne glyphosate 25 a donc décidé d'annuler le prélèvement prévu le 16 novembre et pour le moment de focaliser toute notre communication sur les prélèvements réalisés au printemps !
+Nous sommes désolés pour ce contre temps mais nous ne pouvions concevoir de vous laisser engager des frais sans la certitude que les dossiers pourraient être traités !
+Restons mobilisés par ailleurs pour l'interdiction de tous les pesticides avec les coquelicots et les autres mobilisations à l'oeuvre sur le sujet !
 
