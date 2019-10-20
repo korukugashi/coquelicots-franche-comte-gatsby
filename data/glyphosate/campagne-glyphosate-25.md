@@ -3,9 +3,7 @@ templateKey: glyphosate
 title: Campagne Glyphosate 25
 image: /assets/glyphosate25.png
 ---
-**Campagne Glyphosate 25** s'apprête à lancer sa troisième campagne de prélèvement et d’analyse d'urine.
-
-Elle aura lieu le samedi 16 novembre à Besançon.
+A Besançon deux campagnes de prélèvement ont eu lieu ce printemps avec plus d'une centaine de participants. Les résultats ont été communiqué et la majorité des pisseurs ont déposé plainte au tribunal de Besançon.
 
 ## Une campagne nationale sans précédent
 
