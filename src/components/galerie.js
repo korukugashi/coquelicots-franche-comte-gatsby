@@ -15,7 +15,7 @@ class Galerie extends React.Component {
       variableWidth: true,
       autoplay: true,
       speed: 1000,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 3000
     }
 
     return (
