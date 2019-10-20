@@ -74,5 +74,21 @@ groupes:
     email: besanconveronique@gmail.com
     facebook: 'https://www.facebook.com/NousVoulonsdesCoquelicotsDoleJura/'
     genre: Féminin
+  - commune: MORTEAU
+    correspondant: Taine Shona
+    departement: 25
+    email: shona.taine@gmail.com
+    facebook: 'https://www.facebook.com/groups/350253822394120/'
+    genre: Féminin
+  - commune: TRESILLEY
+    correspondant: Pierre BRONGNIART
+    departement: 70
+    email: jaubartim@hotmail.fr
+    genre: Masculin
+  - commune: Saint Claude
+    correspondant: Rémi
+    departement: 39
+    email: coquelicots_st-claude@riseup.net
+    genre: Masculin
 ---
 
