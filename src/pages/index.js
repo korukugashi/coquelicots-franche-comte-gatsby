@@ -86,7 +86,9 @@ const IndexPage = () => (
     <Section id="contacts">
       <Groups />
     </Section>
-    <Partenaires />
+    <Section id="glyphosate25">
+      <Partenaires />
+    </Section>
     <Section id="photos">
       <Galerie />
     </Section>

@@ -104,6 +104,7 @@ collections:
       - { name: date, label: Date de l'information, widget: datetime, dateFormat: DD/MM/YYYY }
       - { name: title, label: Titre de l'article }
       - { name: body, label: Contenu de l'article, widget: markdown }
+      - { name: image, label: Image, widget: image}
   - name: glyphosate
     label: Glyphosate 25
     folder: data/glyphosate
@@ -111,3 +112,4 @@ collections:
       - { name: templateKey, label: Template Key, widget: hidden, default: glyphosate }
       - { name: title, label: Titre de la page }
       - { name: body, label: Contenu de la page, widget: markdown }
+      - { name: image, label: Image, widget: image}

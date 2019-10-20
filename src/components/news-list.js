@@ -13,6 +13,7 @@ const Image = ({ photo }) => (
         alt={photo.description}
         style={{
           maxWidth: photo.image.childImageSharp.fluid.presentationWidth,
+          maxHeight: 300,
           margin: "0 auto",
         }}
         imgStyle={{ objectFit: "contain" }}

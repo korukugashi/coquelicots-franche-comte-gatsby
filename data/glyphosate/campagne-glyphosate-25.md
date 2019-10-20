@@ -1,16 +1,11 @@
 ---
 templateKey: glyphosate
 title: Campagne Glyphosate 25
+image: /assets/glyphosate25.png
 ---
-# Campagne Glyphosate 25")
-
-![Campagne Glyphosate 25](/assets/glyphosate25.png "Campagne Glyphosate 25")
-
 **Campagne Glyphosate 25** s'apprête à lancer sa troisième campagne de prélèvement et d’analyse d'urine.
 
 Elle aura lieu le samedi 16 novembre à Besançon.
-
-![Analyse d'urine Glyphosate 25](/assets/62403763_2125052240925741_5577726314799955968_n.jpg "Du glyphosate dans vos urines !")
 
 ## Une campagne nationale sans précédent
 
@@ -23,6 +18,10 @@ Au cours des deux campagnes précédentes, quelques 120 personnes habitant la r�
 La contamination est quotidienne. Elle n'épargne personne, à commencer par les paysans eux-mêmes.
 
 A ce jour, à travers toute la France, environ 75 comités locaux se sont déjà constitués, et plus de 5000 personnes ont déjà déposé leur plainte auprès de leur tribunal de Grande Instance, qui se dessaisira au profit du Pôle Santé Publique de Paris.
+
+<div style="height:2rem"></div>
+
+![Analyse d'urine Glyphosate 25](/assets/62403763_2125052240925741_5577726314799955968_n.jpg "Du glyphosate dans vos urines ! Les pisseurs de glyphosate à Besançon.")
 
 ## Le déroulement d'une session
 
@@ -40,7 +39,9 @@ Cette plainte est individuelle et identique pour tout le monde.
 
 L'analyse seule revient à 85€ auxquels il faut ajouter les frais d'huissiers et de justice qui s'élèvent à 50€, soit **135€** au total.
 
-## <a name="extrait-plainte"></a> EXTRAIT DU TEXTE DE LA PLAINTE
+<a name="extrait-plainte"></a>
+
+## EXTRAIT DU TEXTE DE LA PLAINTE
 
 > (…/…) En conséquence, je porte plainte contre toute personne impliquée dans la distribution et la large diffusion dans l’environnement de molécules probablement cancérigènes de glyphosate. Parmi ces personnes, nous souhaitons que vos services vérifient l’implication des personnes suivantes :
 >
@@ -63,4 +64,4 @@ L'analyse seule revient à 85€ auxquels il faut ajouter les frais d'huissiers 
 
 Pour toute question ou inscription, n'hésitez pas à nous contacter à l'adresse suivante : <mailto:campagne.glyphosate25@gmail.com>
 
-Pour plus d’informations visitez le site national  de « campagne glyphosate France » : [www.campagneglyphosate.com](https://www.campagneglyphosate.com/)
+Pour plus d’informations visitez le site national  de [campagne glyphosate France](https://www.campagneglyphosate.com/)

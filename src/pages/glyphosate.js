@@ -1,17 +1,40 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Content, { HTMLContent } from "../components/Content"
 
-export const GlyphosateTemplate = ({ title, content, contentComponent }) => {
+export const GlyphosateTemplate = ({
+  title,
+  content,
+  photo,
+  contentComponent,
+}) => {
   const PostContent = contentComponent || Content
 
   return (
     <>
-      <h1>{title}</h1>
+      <div className="columns is-vcentered">
+        <div className="column is-3">
+          {photo ? (
+            <Img
+              fluid={photo.childImageSharp.fluid}
+              alt={title}
+              style={{
+                maxWidth: photo.childImageSharp.fluid.presentationWidth,
+                maxHeight: 250,
+              }}
+              imgStyle={{ objectFit: "contain" }}
+            />
+          ) : null}
+        </div>
+        <div className="column">
+          <h1>{title}</h1>
+        </div>
+      </div>
       <PostContent content={content} />
     </>
   )
@@ -26,7 +49,14 @@ class Glyphosate extends React.Component {
       <Layout>
         <SEO
           title="Campagne glyphosate 25"
-          keywords={[`pesticides`, `glyphosate`, `prélèvement`, `analyse`, `urine`, `santé`]}
+          keywords={[
+            `pesticides`,
+            `glyphosate`,
+            `prélèvement`,
+            `analyse`,
+            `urine`,
+            `santé`,
+          ]}
           jsonLd={[
             {
               "@context": "https://schema.org",
@@ -42,25 +72,25 @@ class Glyphosate extends React.Component {
                   "@type": "ListItem",
                   position: 2,
                   name: "Campagne glyphosate 25",
-                  item:
-                    "https://www.coquelicots-franche-comte.org/glyphosate/",
+                  item: "https://www.coquelicots-franche-comte.org/glyphosate/",
                 },
               ],
             },
           ]}
         />
-        <section className="section">
+        <section className="section page-glyphosate25">
           <div className="container">
             {glyphosate &&
-              glyphosate.map(({ node: post }, index) =>
-                  <>
-                    <GlyphosateTemplate
-                      title={post.frontmatter.title}
-                      content={post.html}
-                      contentComponent={HTMLContent}
-                    />
-                  </>
-              )}
+              glyphosate.map(({ node: post }, index) => (
+                <>
+                  <GlyphosateTemplate
+                    title={post.frontmatter.title}
+                    content={post.html}
+                    contentComponent={HTMLContent}
+                    photo={post.frontmatter.image}
+                  />
+                </>
+              ))}
           </div>
         </section>
       </Layout>
@@ -90,6 +120,13 @@ export default () => (
               html
               frontmatter {
                 title
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 200, quality: 80) {
+                      ...GatsbyImageSharpFluid_withWebp_noBase64
+                    }
+                  }
+                }
               }
             }
           }
