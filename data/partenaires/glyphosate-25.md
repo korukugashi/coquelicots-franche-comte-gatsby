@@ -3,10 +3,10 @@ templateKey: partenaires
 date: 2019-06-02T09:38:51.599Z
 title: Glyphosate 25
 ---
-![Pisseurs de glyphosate](/assets/62403763_2125052240925741_5577726314799955968_n.jpg "Pisseurs de glyphosate")
+![Pisseurs de glyphosate](/assets/glyphosate25.png "Pisseurs de glyphosate")
 
-Quelques signataires de Besançon ont créé l’association **Campagne glyphosate 25** pour permettre aux citoyens volontaires de faire un **dosage de leur taux de Glyphosate dans les urines** et de participer à l’action juridique engagée contre les responsables de cet empoisonnement.
+Cette campagne d'ampleur nationale vise à **porter plainte contre les décideurs politiques ainsi que les industriels responsables du renouvellement de mise sur le marché du glyphosate** fin 2017.
 
-Plus de 100 personnes se sont déjà engagées dans cette action !
+Campagne Glyphosate 25 s'apprête à lancer sa troisième campagne de prélèvement et d’analyse d'urine.
 
-Si vous souhaitez des informations ou participer à la campagne écrivez à <mailto:campagne.glyphosate25@gmail.com>.
+[En savoir plus](/glyphosate/)
