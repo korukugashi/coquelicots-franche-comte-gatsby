@@ -49,6 +49,7 @@ class Glyphosate extends React.Component {
       <Layout>
         <SEO
           title="Campagne glyphosate 25"
+          description="Campagne de tests de présence de glyphosate dans les urines. Les pisseurs de glyphosate du Doubs ont porté plainte au tribunal de Besançon."
           keywords={[
             `pesticides`,
             `glyphosate`,
