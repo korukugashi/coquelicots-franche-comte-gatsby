@@ -90,5 +90,10 @@ groupes:
     departement: 39
     email: coquelicots_st-claude@riseup.net
     genre: Masculin
+  - commune: MEREY SOUS MONTROND
+    correspondant: Sébastien BRENOT
+    departement: 25
+    email: sebastien.brenot25@orange.fr
+    genre: Masculin
 ---
 
