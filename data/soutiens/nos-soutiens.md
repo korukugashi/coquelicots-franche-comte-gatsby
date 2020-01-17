@@ -30,6 +30,8 @@ mairies:
     title: Saint Loup Sur Semouse
   - link: 'https://www.la-haute-saone.com/index.php?IdPage=melisey'
     title: Melisey 70
+  - link: 'https://fr.wikipedia.org/wiki/Nans-sous-Sainte-Anne'
+    title: Nans-Sous-Sainte-Anne 25
 commercants:
   - link: 'https://www.biocoop.fr/'
     title: Biocoop
