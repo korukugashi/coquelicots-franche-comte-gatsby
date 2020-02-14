@@ -2,7 +2,7 @@
 templateKey: actualites
 date: 2020-02-14T18:00:22.925Z
 title: >-
-  Les coquelicotes de Pelousey organise la prochaine journée des coquelicots
+  Les coquelicotes de Pelousey organisent la prochaine journée des coquelicots
   comtois
 photos:
   - description: affiche liberterre
