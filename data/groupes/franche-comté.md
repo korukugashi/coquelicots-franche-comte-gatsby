@@ -93,7 +93,7 @@ groupes:
   - commune: MEREY SOUS MONTROND
     correspondant: Sébastien BRENOT
     departement: 25
-    email: sebastien.brenot25@orange.fr
+    email: coquelicots.merey25660@gmail.com
     genre: Masculin
 ---
 
