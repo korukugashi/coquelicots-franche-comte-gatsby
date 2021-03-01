@@ -12,6 +12,8 @@ liens:
   - description: Article Est républicain
     url: >-
       https://www.estrepublicain.fr/environnement/2021/02/22/arrete-antipesticides-un-maire-du-doubs-a-nouveau-devant-le-tribunal
+  - description: Photos de l'action d'Antoine MERMET
+    url: 'http://hanslucas.com/amermet/photo/42941'
 ---
 Pour soutenir Emmanuel CRETIN convoqué pour une seconde audition au tribunal administratif mardi 23 février une cinquantaine de coquelicots se sont retrouvés !
 
