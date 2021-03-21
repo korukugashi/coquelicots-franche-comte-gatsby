@@ -7,5 +7,5 @@ photos:
     image: /assets/une-de-l-est-du-20-mars-2021.jpg
 liens: []
 ---
-A l'Appel des lycéens et autres organisations , les coquelicots de Besançon ont participé à la marche CLIMAT vendredi 19 mars. Masqués mais toujours déterminés,  et surtout un plaisir partagé de se remobiliser !
+A l'Appel du collectif les ECO-liés.ées , organisation lycéenne et étudiante crée il y a 2 ans,  les coquelicots de Besançon ont participé à la marche CLIMAT vendredi 19 mars. Masqués mais toujours déterminés,  et surtout un plaisir partagé de se remobiliser !
 Les coquelicots sont résilients, confinement ou pas, ils refleuriront !
