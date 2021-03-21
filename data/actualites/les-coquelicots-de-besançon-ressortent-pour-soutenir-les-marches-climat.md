@@ -1,7 +1,7 @@
 ---
 templateKey: actualites
 date: 2021-03-21T08:15:00.953Z
-title: Les coquelicots de Besançon ressortent pour soutenir les marches CLIMAT !
+title: Les coquelicots de Besançon ressortent pour participer aux  marches CLIMAT !
 photos:
   - description: EST CLIMAT 19 mars 2021
     image: /assets/une-de-l-est-du-20-mars-2021.jpg
