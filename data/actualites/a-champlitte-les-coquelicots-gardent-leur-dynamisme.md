@@ -11,3 +11,5 @@ liens: []
 ---
 A lire le flyer qu'ils viennent d'éditer vous comprendrez qu'à Champlitte le collectif local ne lâche rien et poursuis avec dynamisme les actions coquelicots en tous genres !
 Bravo à eux ! 
+Pour les joindre coquelicots.champlitte@gmail.com
+Pour les rejoindre : RDV le premier vendredi de chaque mois à 18 h
